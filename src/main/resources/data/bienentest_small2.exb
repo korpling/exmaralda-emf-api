@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basic-transcription>
+<head>
+<meta-information>
+<project-name></project-name><transcription-name></transcription-name><referenced-file url=""></referenced-file><ud-meta-information><ud-information attribute-name="ELAN-Media-File"></ud-information><ud-information attribute-name="ELAN-Mime-Type"></ud-information></ud-meta-information><comment></comment><transcription-convention></transcription-convention></meta-information>
+<speakertable>
+<speaker id="SPK0">
+<abbreviation>SPK0</abbreviation>
+<sex value="u"></sex>
+<languages-used></languages-used>
+<l1></l1>
+<l2></l2>
+<ud-speaker-information></ud-speaker-information>
+<comment></comment>
+</speaker>
+<speaker id="SPK1">
+<abbreviation>SPK1</abbreviation>
+<sex value="u"></sex>
+<languages-used></languages-used>
+<l1></l1>
+<l2></l2>
+<ud-speaker-information></ud-speaker-information>
+<comment></comment>
+</speaker>
+</speakertable>
+</head>
+<basic-body>
+<common-timeline>
+</common-timeline>
+</basic-body>
+</basic-transcription>

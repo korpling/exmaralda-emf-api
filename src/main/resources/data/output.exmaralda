@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="ASCII"?>
+<exb:BasicTranscription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:exb="exb">
+  <commonTimeLine>
+    <TLIs time="0.0" type="appl" id="T0"/>
+    <TLIs time="0.0" type="appl" id="T1"/>
+    <TLIs time="0.0" type="appl" id="T2"/>
+    <TLIs time="0.0" type="appl" id="T3"/>
+    <TLIs time="0.0" type="appl" id="T4"/>
+    <TLIs time="1.0" type="appl" id="T5"/>
+    <TLIs time="1.4" type="appl" id="T6"/>
+    <TLIs time="2.4" type="appl" id="T7"/>
+    <TLIs time="3.2" type="appl" id="T8"/>
+    <TLIs time="4.2" type="appl" id="T9"/>
+    <TLIs time="4.4" type="appl" id="T10"/>
+    <TLIs time="5.0" type="appl" id="T11"/>
+    <TLIs time="6.2" type="appl" id="T12"/>
+    <TLIs time="6.6" type="appl" id="T13"/>
+    <TLIs time="7.0" type="appl" id="T14"/>
+    <TLIs time="8.0" type="appl" id="T15"/>
+    <TLIs time="9.0" type="appl" id="T16"/>
+    <TLIs time="9.4" type="appl" id="T17"/>
+    <TLIs time="10.4" type="appl" id="T18"/>
+    <TLIs time="11.6" type="appl" id="T19"/>
+    <TLIs time="12.8" type="appl" id="T20"/>
+    <TLIs time="13.4" type="appl" id="T21"/>
+    <TLIs time="14.6" type="appl" id="T22"/>
+    <TLIs time="15.6" type="appl" id="T23"/>
+    <TLIs time="16.6" type="appl" id="T24"/>
+    <TLIs time="17.2" type="appl" id="T25"/>
+    <TLIs time="18.8" type="appl" id="T26"/>
+    <TLIs time="20.0" type="appl" id="T27"/>
+    <TLIs time="20.4" type="appl" id="T28"/>
+    <TLIs time="21.2" type="appl" id="T29"/>
+    <TLIs time="21.6" type="appl" id="T30"/>
+    <TLIs time="22.4" type="appl" id="T31"/>
+    <TLIs time="22.8" type="appl" id="T32"/>
+    <TLIs time="23.6" type="appl" id="T33"/>
+    <TLIs time="23.8" type="appl" id="T34"/>
+    <TLIs time="25.0" type="appl" id="T35"/>
+    <TLIs time="25.8" type="appl" id="T36"/>
+    <TLIs time="27.2" type="appl" id="T37"/>
+    <TLIs time="28.2" type="appl" id="T38"/>
+    <TLIs time="28.6" type="appl" id="T39"/>
+    <TLIs time="30.2" type="appl" id="T40"/>
+    <TLIs time="31.6" type="appl" id="T41"/>
+    <TLIs time="32.0" type="appl" id="T42"/>
+    <TLIs time="32.2" type="appl" id="T43"/>
+    <TLIs time="32.8" type="appl" id="T44"/>
+    <TLIs time="34.0" type="appl" id="T45"/>
+    <TLIs time="35.4" type="appl" id="T46"/>
+    <TLIs time="35.8" type="appl" id="T47"/>
+    <TLIs time="36.2" type="appl" id="T48"/>
+    <TLIs time="37.0" type="appl" id="T49"/>
+    <TLIs time="37.6" type="appl" id="T50"/>
+    <TLIs time="38.4" type="appl" id="T51"/>
+    <TLIs time="40.4" type="appl" id="T52"/>
+    <TLIs time="40.8" type="appl" id="T53"/>
+    <TLIs time="41.6" type="appl" id="T54"/>
+    <TLIs time="42.2" type="appl" id="T55"/>
+    <TLIs time="43.0" type="appl" id="T56"/>
+    <TLIs time="45.4" type="appl" id="T57"/>
+    <TLIs time="45.8" type="appl" id="T58"/>
+    <TLIs time="46.8" type="appl" id="T59"/>
+    <TLIs time="47.8" type="appl" id="T60"/>
+    <TLIs time="49.0" type="appl" id="T61"/>
+    <TLIs time="49.4" type="appl" id="T62"/>
+    <TLIs time="50.8" type="appl" id="T63"/>
+    <TLIs time="52.0" type="appl" id="T64"/>
+    <TLIs time="53.4" type="appl" id="T65"/>
+    <TLIs time="53.8" type="appl" id="T66"/>
+    <TLIs id="T67"/>
+  </commonTimeLine>
+  <metaInformation/>
+  <tiers category="symb-association-tier" displayName="Manuskript B" type="a" id="TIE0">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="Manuskript R" type="a" id="TIE1"/>
+  <tiers category="symb-association-tier" displayName="Manuskript W" type="a" id="TIE2">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-subdivision-tier" displayName="Referenztext B" type="a" id="TIE3">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="Referenztext R" type="a" id="TIE4"/>
+  <tiers category="main-tier" displayName="Referenztext W" id="TIE5">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="Standard B" type="a" id="TIE6">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="Standard W" type="a" id="TIE7">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="Lemma" type="a" id="TIE8">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="&#xdc;bersetzung" type="a" id="TIE9">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="Sprache" type="a" id="TIE10">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.11" end="//@commonTimeLine/@TLIs.12"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.59" end="//@commonTimeLine/@TLIs.60"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.62" end="//@commonTimeLine/@TLIs.63"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="M1a DDDTS Lemma" type="a" id="TIE11">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="M1b DDDTS Beleg" type="a" id="TIE12">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.13" end="//@commonTimeLine/@TLIs.14"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.16" end="//@commonTimeLine/@TLIs.17"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.27" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.29" end="//@commonTimeLine/@TLIs.30"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.31" end="//@commonTimeLine/@TLIs.32"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.33" end="//@commonTimeLine/@TLIs.34"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.38" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.47" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.52" end="//@commonTimeLine/@TLIs.53"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.57" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.61" end="//@commonTimeLine/@TLIs.62"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+    <events start="//@commonTimeLine/@TLIs.65" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="M2a Flexion Lemma" type="a" id="TIE13">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="M2b Flexion Beleg 1" type="a" id="TIE14">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="M2c Flexion Beleg 2" type="a" id="TIE15">
+    <events start="//@commonTimeLine/@TLIs.4" end="//@commonTimeLine/@TLIs.5"/>
+    <events start="//@commonTimeLine/@TLIs.5" end="//@commonTimeLine/@TLIs.6"/>
+    <events start="//@commonTimeLine/@TLIs.6" end="//@commonTimeLine/@TLIs.7"/>
+    <events start="//@commonTimeLine/@TLIs.7" end="//@commonTimeLine/@TLIs.8"/>
+    <events start="//@commonTimeLine/@TLIs.8" end="//@commonTimeLine/@TLIs.9"/>
+    <events start="//@commonTimeLine/@TLIs.9" end="//@commonTimeLine/@TLIs.10"/>
+    <events start="//@commonTimeLine/@TLIs.10" end="//@commonTimeLine/@TLIs.11"/>
+    <events start="//@commonTimeLine/@TLIs.12" end="//@commonTimeLine/@TLIs.13"/>
+    <events start="//@commonTimeLine/@TLIs.14" end="//@commonTimeLine/@TLIs.15"/>
+    <events start="//@commonTimeLine/@TLIs.15" end="//@commonTimeLine/@TLIs.16"/>
+    <events start="//@commonTimeLine/@TLIs.17" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.19"/>
+    <events start="//@commonTimeLine/@TLIs.19" end="//@commonTimeLine/@TLIs.20"/>
+    <events start="//@commonTimeLine/@TLIs.20" end="//@commonTimeLine/@TLIs.21"/>
+    <events start="//@commonTimeLine/@TLIs.21" end="//@commonTimeLine/@TLIs.22"/>
+    <events start="//@commonTimeLine/@TLIs.22" end="//@commonTimeLine/@TLIs.23"/>
+    <events start="//@commonTimeLine/@TLIs.23" end="//@commonTimeLine/@TLIs.24"/>
+    <events start="//@commonTimeLine/@TLIs.24" end="//@commonTimeLine/@TLIs.25"/>
+    <events start="//@commonTimeLine/@TLIs.25" end="//@commonTimeLine/@TLIs.26"/>
+    <events start="//@commonTimeLine/@TLIs.26" end="//@commonTimeLine/@TLIs.27"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.29"/>
+    <events start="//@commonTimeLine/@TLIs.30" end="//@commonTimeLine/@TLIs.31"/>
+    <events start="//@commonTimeLine/@TLIs.32" end="//@commonTimeLine/@TLIs.33"/>
+    <events start="//@commonTimeLine/@TLIs.34" end="//@commonTimeLine/@TLIs.35"/>
+    <events start="//@commonTimeLine/@TLIs.35" end="//@commonTimeLine/@TLIs.36"/>
+    <events start="//@commonTimeLine/@TLIs.36" end="//@commonTimeLine/@TLIs.37"/>
+    <events start="//@commonTimeLine/@TLIs.37" end="//@commonTimeLine/@TLIs.38"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.40"/>
+    <events start="//@commonTimeLine/@TLIs.40" end="//@commonTimeLine/@TLIs.41"/>
+    <events start="//@commonTimeLine/@TLIs.41" end="//@commonTimeLine/@TLIs.42"/>
+    <events start="//@commonTimeLine/@TLIs.42" end="//@commonTimeLine/@TLIs.43"/>
+    <events start="//@commonTimeLine/@TLIs.43" end="//@commonTimeLine/@TLIs.44"/>
+    <events start="//@commonTimeLine/@TLIs.44" end="//@commonTimeLine/@TLIs.45"/>
+    <events start="//@commonTimeLine/@TLIs.45" end="//@commonTimeLine/@TLIs.46"/>
+    <events start="//@commonTimeLine/@TLIs.46" end="//@commonTimeLine/@TLIs.47"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.49"/>
+    <events start="//@commonTimeLine/@TLIs.49" end="//@commonTimeLine/@TLIs.50"/>
+    <events start="//@commonTimeLine/@TLIs.50" end="//@commonTimeLine/@TLIs.51"/>
+    <events start="//@commonTimeLine/@TLIs.51" end="//@commonTimeLine/@TLIs.52"/>
+    <events start="//@commonTimeLine/@TLIs.53" end="//@commonTimeLine/@TLIs.54"/>
+    <events start="//@commonTimeLine/@TLIs.54" end="//@commonTimeLine/@TLIs.55"/>
+    <events start="//@commonTimeLine/@TLIs.55" end="//@commonTimeLine/@TLIs.56"/>
+    <events start="//@commonTimeLine/@TLIs.56" end="//@commonTimeLine/@TLIs.57"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.59"/>
+    <events start="//@commonTimeLine/@TLIs.60" end="//@commonTimeLine/@TLIs.61"/>
+    <events start="//@commonTimeLine/@TLIs.63" end="//@commonTimeLine/@TLIs.64"/>
+    <events start="//@commonTimeLine/@TLIs.64" end="//@commonTimeLine/@TLIs.65"/>
+  </tiers>
+  <tiers category="symb-association-tier" displayName="R Reim" type="a" id="TIE16"/>
+  <tiers category="symb-association-tier" displayName="R Kommentar" type="a" id="TIE17"/>
+  <tiers category="main-tier" displayName="S1a Satz" id="TIE18"/>
+  <tiers category="main-tier" displayName="S1b Hierarchie" id="TIE19"/>
+  <tiers category="main-tier" displayName="S2 Stammbaum" id="TIE20"/>
+  <tiers category="main-tier" displayName="Tg1a Kapitel" id="TIE21"/>
+  <tiers category="main-tier" displayName="Tg1b Unterkapitel" id="TIE22"/>
+  <tiers category="main-tier" displayName="Tg2a Vers" id="TIE23"/>
+  <tiers category="main-tier" displayName="Tg2b Halbvers" id="TIE24"/>
+  <tiers category="main-tier" displayName="Tg Kommentar" id="TIE25"/>
+  <tiers category="main-tier" displayName="Ts1 Seite Ed.1" id="TIE26"/>
+  <tiers category="main-tier" displayName="Ts2 Zeile Ed.1" id="TIE27">
+    <events start="//@commonTimeLine/@TLIs.0" end="//@commonTimeLine/@TLIs.2"/>
+    <events start="//@commonTimeLine/@TLIs.3" end="//@commonTimeLine/@TLIs.18"/>
+    <events start="//@commonTimeLine/@TLIs.18" end="//@commonTimeLine/@TLIs.28"/>
+    <events start="//@commonTimeLine/@TLIs.28" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.48"/>
+    <events start="//@commonTimeLine/@TLIs.48" end="//@commonTimeLine/@TLIs.58"/>
+    <events start="//@commonTimeLine/@TLIs.58" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="main-tier" displayName="Ts1 Seite Ed.2" id="TIE28"/>
+  <tiers category="main-tier" displayName="Ts2 Zeile Ed.2" id="TIE29"/>
+  <tiers category="main-tier" displayName="Ts1 Seite Ed.3" id="TIE30">
+    <events start="//@commonTimeLine/@TLIs.1" end="//@commonTimeLine/@TLIs.39"/>
+    <events start="//@commonTimeLine/@TLIs.39" end="//@commonTimeLine/@TLIs.66"/>
+  </tiers>
+  <tiers category="main-tier" displayName="Ts2 Zeile Ed.3" id="TIE31"/>
+  <tiers category="main-tier" displayName="Ms1 Seite" id="TIE32"/>
+  <tiers category="main-tier" displayName="Ms2 Zeile" id="TIE33"/>
+  <tiers category="main-tier" displayName="Referenz" id="TIE34"/>
+</exb:BasicTranscription>

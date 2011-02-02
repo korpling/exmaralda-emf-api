@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<basic-transcription>
+<head>
+<meta-information>
+<project-name></project-name><transcription-name></transcription-name><referenced-file url=""></referenced-file><ud-meta-information><ud-information attribute-name="ELAN-Media-File"></ud-information><ud-information attribute-name="ELAN-Mime-Type"></ud-information></ud-meta-information><comment></comment><transcription-convention></transcription-convention></meta-information>
+<speakertable>
+<speaker id="SPK0">
+<abbreviation>SPK0</abbreviation>
+<sex value="u"></sex>
+<languages-used></languages-used>
+<l1></l1>
+<l2></l2>
+<ud-speaker-information></ud-speaker-information>
+<comment></comment>
+</speaker>
+<speaker id="SPK1">
+<abbreviation>SPK1</abbreviation>
+<sex value="u"></sex>
+<languages-used></languages-used>
+<l1></l1>
+<l2></l2>
+<ud-speaker-information></ud-speaker-information>
+<comment></comment>
+</speaker>
+</speakertable>
+</head>
+<basic-body>
+<common-timeline>
+<tli id="T0" time="0.0" type="appl"></tli>
+<tli id="T1" time="0.0" type="appl"></tli>
+<tli id="T2" time="0.0" type="appl"></tli>
+<tli id="T3" time="0.0" type="appl"></tli>
+<tli id="T4" time="0.0" type="appl"></tli>
+<tli id="T5" time="1.0" type="appl"></tli>
+<tli id="T6" time="1.4" type="appl"></tli>
+<tli id="T7" time="2.4" type="appl"></tli>
+<tli id="T8" time="3.2" type="appl"></tli>
+<tli id="T9" time="4.2" type="appl"></tli>
+<tli id="T10" time="4.4" type="appl"></tli>
+<tli id="T11" time="5.0" type="appl"></tli>
+<tli id="T12" time="6.2" type="appl"></tli>
+<tli id="T13" time="6.6" type="appl"></tli>
+<tli id="T14" time="7.0" type="appl"></tli>
+<tli id="T15" time="8.0" type="appl"></tli>
+<tli id="T16" time="9.0" type="appl"></tli>
+<tli id="T17" time="9.4" type="appl"></tli>
+<tli id="T18" time="10.4" type="appl"></tli>
+<tli id="T19" time="11.6" type="appl"></tli>
+<tli id="T20" time="12.8" type="appl"></tli>
+<tli id="T21" time="13.4" type="appl"></tli>
+<tli id="T22" time="14.6" type="appl"></tli>
+<tli id="T23" time="15.6" type="appl"></tli>
+<tli id="T24" time="16.6" type="appl"></tli>
+<tli id="T25" time="17.2" type="appl"></tli>
+<tli id="T26" time="18.8" type="appl"></tli>
+<tli id="T27" time="20.0" type="appl"></tli>
+<tli id="T28" time="20.4" type="appl"></tli>
+<tli id="T29" time="21.2" type="appl"></tli>
+<tli id="T30" time="21.6" type="appl"></tli>
+<tli id="T31" time="22.4" type="appl"></tli>
+<tli id="T32" time="22.8" type="appl"></tli>
+<tli id="T33" time="23.6" type="appl"></tli>
+<tli id="T34" time="23.8" type="appl"></tli>
+<tli id="T35" time="25.0" type="appl"></tli>
+<tli id="T36" time="25.8" type="appl"></tli>
+<tli id="T37" time="27.2" type="appl"></tli>
+<tli id="T38" time="28.2" type="appl"></tli>
+<tli id="T39" time="28.6" type="appl"></tli>
+<tli id="T40" time="30.2" type="appl"></tli>
+<tli id="T41" time="31.6" type="appl"></tli>
+<tli id="T42" time="32.0" type="appl"></tli>
+<tli id="T43" time="32.2" type="appl"></tli>
+<tli id="T44" time="32.8" type="appl"></tli>
+<tli id="T45" time="34.0" type="appl"></tli>
+<tli id="T46" time="35.4" type="appl"></tli>
+<tli id="T47" time="35.8" type="appl"></tli>
+<tli id="T48" time="36.2" type="appl"></tli>
+<tli id="T49" time="37.0" type="appl"></tli>
+<tli id="T50" time="37.6" type="appl"></tli>
+<tli id="T51" time="38.4" type="appl"></tli>
+<tli id="T52" time="40.4" type="appl"></tli>
+<tli id="T53" time="40.8" type="appl"></tli>
+<tli id="T54" time="41.6" type="appl"></tli>
+<tli id="T55" time="42.2" type="appl"></tli>
+<tli id="T56" time="43.0" type="appl"></tli>
+<tli id="T57" time="45.4" type="appl"></tli>
+<tli id="T58" time="45.8" type="appl"></tli>
+<tli id="T59" time="46.8" type="appl"></tli>
+<tli id="T60" time="47.8" type="appl"></tli>
+<tli id="T61" time="49.0" type="appl"></tli>
+<tli id="T62" time="49.4" type="appl"></tli>
+<tli id="T63" time="50.8" type="appl"></tli>
+<tli id="T64" time="52.0" type="appl"></tli>
+<tli id="T65" time="53.4" type="appl"></tli>
+<tli id="T66" time="53.8" type="appl"></tli>
+<tli id="T67"></tli>
+</common-timeline>
+<tier id="TIE0" speaker="SPK0" category="symb-association-tier" type="a" display-name="Manuskript B"><ud-tier-information><ud-information attribute-name="ELAN-TimeAlignable">false</ud-information><ud-information attribute-name="ELAN-Constraints">Symbolic_Association</ud-information><ud-information attribute-name="ELAN-ParentRef">Referenztext B</ud-information><ud-information attribute-name="ELAN-DependencyLevel">2</ud-information></ud-tier-information>
+<event start="T4" end="T5"><ud-information attribute-name="ELAN-ID">TIE111_1</ud-information><ud-information attribute-name="ELAN-REF">TIE121_1</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>K | i | r | s | t</event>
+<event start="T5" end="T6"><ud-information attribute-name="ELAN-ID">TIE111_6</ud-information><ud-information attribute-name="ELAN-REF">TIE121_6</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T6" end="T7"><ud-information attribute-name="ELAN-ID">TIE111_8</ud-information><ud-information attribute-name="ELAN-REF">TIE121_8</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>i | m | b | i |  </event>
+<event start="T7" end="T8"><ud-information attribute-name="ELAN-ID">TIE111_13</ud-information><ud-information attribute-name="ELAN-REF">TIE121_13</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>i | s | t |  </event>
+<event start="T8" end="T9"><ud-information attribute-name="ELAN-ID">TIE111_17</ud-information><ud-information attribute-name="ELAN-REF">TIE121_17</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>h | u | c | z | e</event>
+<event start="T9" end="T10"><ud-information attribute-name="ELAN-ID">TIE111_22</ud-information><ud-information attribute-name="ELAN-REF">TIE121_22</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>!</event>
+<event start="T10" end="T11"><ud-information attribute-name="ELAN-ID">TIE111_23</ud-information><ud-information attribute-name="ELAN-REF">TIE121_23</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | u |  </event>
+<event start="T11" end="T12"><ud-information attribute-name="ELAN-ID">TIE111_26</ud-information><ud-information attribute-name="ELAN-REF">TIE121_26</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>f | l | u | i | c |  </event>
+<event start="T12" end="T13"><ud-information attribute-name="ELAN-ID">TIE111_32</ud-information><ud-information attribute-name="ELAN-REF">TIE121_32</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>d | u</event>
+<event start="T13" end="T14"><ud-information attribute-name="ELAN-ID">TIE111_34</ud-information><ud-information attribute-name="ELAN-REF">TIE121_34</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T14" end="T15"><ud-information attribute-name="ELAN-ID">TIE111_36</ud-information><ud-information attribute-name="ELAN-REF">TIE121_36</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>u | i | h | u |  </event>
+<event start="T15" end="T16"><ud-information attribute-name="ELAN-ID">TIE111_41</ud-information><ud-information attribute-name="ELAN-REF">TIE121_41</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>m | i | n | a | z</event>
+<event start="T16" end="T17"><ud-information attribute-name="ELAN-ID">TIE111_46</ud-information><ud-information attribute-name="ELAN-REF">TIE121_46</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T17" end="T18"><ud-information attribute-name="ELAN-ID">TIE111_48</ud-information><ud-information attribute-name="ELAN-REF">TIE121_48</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>h | e | r | a |  </event>
+<event start="T18" end="T19"><ud-information attribute-name="ELAN-ID">TIE111_53</ud-information><ud-information attribute-name="ELAN-REF">TIE121_53</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>f | r | i | d | u |  </event>
+<event start="T19" end="T20"><ud-information attribute-name="ELAN-ID">TIE111_59</ud-information><ud-information attribute-name="ELAN-REF">TIE121_59</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>f | r | o | n | o |  </event>
+<event start="T20" end="T21"><ud-information attribute-name="ELAN-ID">TIE111_65</ud-information><ud-information attribute-name="ELAN-REF">TIE121_65</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>i | n |  </event>
+<event start="T21" end="T22"><ud-information attribute-name="ELAN-ID">TIE111_68</ud-information><ud-information attribute-name="ELAN-REF">TIE121_68</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>g | o | d | e | s |  </event>
+<event start="T22" end="T23"><ud-information attribute-name="ELAN-ID">TIE111_74</ud-information><ud-information attribute-name="ELAN-REF">TIE121_74</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>m | u | n | t |  </event>
+<event start="T23" end="T24"><ud-information attribute-name="ELAN-ID">TIE111_79</ud-information><ud-information attribute-name="ELAN-REF">TIE121_79</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>h | e | i | m |  </event>
+<event start="T24" end="T25"><ud-information attribute-name="ELAN-ID">TIE111_84</ud-information><ud-information attribute-name="ELAN-REF">TIE121_84</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>z | i |  </event>
+<event start="T25" end="T26"><ud-information attribute-name="ELAN-ID">TIE111_87</ud-information><ud-information attribute-name="ELAN-REF">TIE121_87</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>c | o | m | o | n | n | e |  </event>
+<event start="T26" end="T27"><ud-information attribute-name="ELAN-ID">TIE111_95</ud-information><ud-information attribute-name="ELAN-REF">TIE121_95</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>g | i | s | u | n | t</event>
+<event start="T27" end="T28"><ud-information attribute-name="ELAN-ID">TIE111_101</ud-information><ud-information attribute-name="ELAN-REF">TIE121_101</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>. |  </event>
+<event start="T28" end="T29"><ud-information attribute-name="ELAN-ID">TIE111_103</ud-information><ud-information attribute-name="ELAN-REF">TIE121_103</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>S | i | z | i</event>
+<event start="T29" end="T30"><ud-information attribute-name="ELAN-ID">TIE111_107</ud-information><ud-information attribute-name="ELAN-REF">TIE121_107</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T30" end="T31"><ud-information attribute-name="ELAN-ID">TIE111_109</ud-information><ud-information attribute-name="ELAN-REF">TIE121_109</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>s | i | z | i</event>
+<event start="T31" end="T32"><ud-information attribute-name="ELAN-ID">TIE111_113</ud-information><ud-information attribute-name="ELAN-REF">TIE121_113</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T32" end="T33"><ud-information attribute-name="ELAN-ID">TIE111_115</ud-information><ud-information attribute-name="ELAN-REF">TIE121_115</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>b | i | n | a</event>
+<event start="T33" end="T34"><ud-information attribute-name="ELAN-ID">TIE111_119</ud-information><ud-information attribute-name="ELAN-REF">TIE121_119</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>:</event>
+<event start="T34" end="T35"><ud-information attribute-name="ELAN-ID">TIE111_120</ud-information><ud-information attribute-name="ELAN-REF">TIE121_120</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>i | n | b | o | t |  </event>
+<event start="T35" end="T36"><ud-information attribute-name="ELAN-ID">TIE111_126</ud-information><ud-information attribute-name="ELAN-REF">TIE121_126</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>d | i | r |  </event>
+<event start="T36" end="T37"><ud-information attribute-name="ELAN-ID">TIE111_130</ud-information><ud-information attribute-name="ELAN-REF">TIE121_130</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>s | a | n | c | t | e |  </event>
+<event start="T37" end="T38"><ud-information attribute-name="ELAN-ID">TIE111_137</ud-information><ud-information attribute-name="ELAN-REF">TIE121_137</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>M | a | r | i | a</event>
+<event start="T38" end="T39"><ud-information attribute-name="ELAN-ID">TIE111_142</ud-information><ud-information attribute-name="ELAN-REF">TIE121_142</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>. |  </event>
+<event start="T39" end="T40"><ud-information attribute-name="ELAN-ID">TIE111_144</ud-information><ud-information attribute-name="ELAN-REF">TIE121_144</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>h | u | r | o | l | o | b |  </event>
+<event start="T40" end="T41"><ud-information attribute-name="ELAN-ID">TIE111_152</ud-information><ud-information attribute-name="ELAN-REF">TIE121_152</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | i | h | a | b | e |  </event>
+<event start="T41" end="T42"><ud-information attribute-name="ELAN-ID">TIE111_159</ud-information><ud-information attribute-name="ELAN-REF">TIE121_159</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>d | u</event>
+<event start="T42" end="T43"><ud-information attribute-name="ELAN-ID">TIE111_161</ud-information><ud-information attribute-name="ELAN-REF">TIE121_161</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>:</event>
+<event start="T43" end="T44"><ud-information attribute-name="ELAN-ID">TIE111_162</ud-information><ud-information attribute-name="ELAN-REF">TIE121_162</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>z | i |  </event>
+<event start="T44" end="T45"><ud-information attribute-name="ELAN-ID">TIE111_165</ud-information><ud-information attribute-name="ELAN-REF">TIE121_165</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>h | o | l | c | e |  </event>
+<event start="T45" end="T46"><ud-information attribute-name="ELAN-ID">TIE111_171</ud-information><ud-information attribute-name="ELAN-REF">TIE121_171</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | i | f | l | u | c |  </event>
+<event start="T46" end="T47"><ud-information attribute-name="ELAN-ID">TIE111_178</ud-information><ud-information attribute-name="ELAN-REF">TIE121_178</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>d | u</event>
+<event start="T47" end="T48"><ud-information attribute-name="ELAN-ID">TIE111_180</ud-information><ud-information attribute-name="ELAN-REF">TIE121_180</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T48" end="T49"><ud-information attribute-name="ELAN-ID">TIE111_182</ud-information><ud-information attribute-name="ELAN-REF">TIE121_182</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | o | h |  </event>
+<event start="T49" end="T50"><ud-information attribute-name="ELAN-ID">TIE111_186</ud-information><ud-information attribute-name="ELAN-REF">TIE121_186</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>d | u |  </event>
+<event start="T50" end="T51"><ud-information attribute-name="ELAN-ID">TIE111_189</ud-information><ud-information attribute-name="ELAN-REF">TIE121_189</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>m | i | r |  </event>
+<event start="T51" end="T52"><ud-information attribute-name="ELAN-ID">TIE111_193</ud-information><ud-information attribute-name="ELAN-REF">TIE121_193</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | i | n | d | r | i | n | n | e | s</event>
+<event start="T52" end="T53"><ud-information attribute-name="ELAN-ID">TIE111_203</ud-information><ud-information attribute-name="ELAN-REF">TIE121_203</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T53" end="T54"><ud-information attribute-name="ELAN-ID">TIE111_205</ud-information><ud-information attribute-name="ELAN-REF">TIE121_205</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | o | h |  </event>
+<event start="T54" end="T55"><ud-information attribute-name="ELAN-ID">TIE111_209</ud-information><ud-information attribute-name="ELAN-REF">TIE121_209</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>d | u |  </event>
+<event start="T55" end="T56"><ud-information attribute-name="ELAN-ID">TIE111_212</ud-information><ud-information attribute-name="ELAN-REF">TIE121_212</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>m | i | r |  </event>
+<event start="T56" end="T57"><ud-information attribute-name="ELAN-ID">TIE111_216</ud-information><ud-information attribute-name="ELAN-REF">TIE121_216</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>n | i | n | t | u | u | i | n | n | e | s | t</event>
+<event start="T57" end="T58"><ud-information attribute-name="ELAN-ID">TIE111_228</ud-information><ud-information attribute-name="ELAN-REF">TIE121_228</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>. |  </event>
+<event start="T58" end="T59"><ud-information attribute-name="ELAN-ID">TIE111_230</ud-information><ud-information attribute-name="ELAN-REF">TIE121_230</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>s | i | z | i |  </event>
+<event start="T59" end="T60"><ud-information attribute-name="ELAN-ID">TIE111_235</ud-information><ud-information attribute-name="ELAN-REF">TIE121_235</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>u | i | l | u |  </event>
+<event start="T60" end="T61"><ud-information attribute-name="ELAN-ID">TIE111_240</ud-information><ud-information attribute-name="ELAN-REF">TIE121_240</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>s | t | i | l | l | o</event>
+<event start="T61" end="T62"><ud-information attribute-name="ELAN-ID">TIE111_246</ud-information><ud-information attribute-name="ELAN-REF">TIE121_246</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>, |  </event>
+<event start="T62" end="T63"><ud-information attribute-name="ELAN-ID">TIE111_248</ud-information><ud-information attribute-name="ELAN-REF">TIE121_248</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>v | u | i | r | k | i |  </event>
+<event start="T63" end="T64"><ud-information attribute-name="ELAN-ID">TIE111_255</ud-information><ud-information attribute-name="ELAN-REF">TIE121_255</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>g | o | d | e | s |  </event>
+<event start="T64" end="T65"><ud-information attribute-name="ELAN-ID">TIE111_261</ud-information><ud-information attribute-name="ELAN-REF">TIE121_261</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>u | u | i | l | l | o | n</event>
+<event start="T65" end="T66"><ud-information attribute-name="ELAN-ID">TIE111_268</ud-information><ud-information attribute-name="ELAN-REF">TIE121_268</ud-information><ud-information attribute-name="ELAN-PREV"></ud-information>. |  </event>
+</tier>
+</basic-body>
+</basic-transcription>

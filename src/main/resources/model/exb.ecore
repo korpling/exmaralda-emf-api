@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="exmaraldaBasic"
+    nsURI="exb" nsPrefix="exb">
+  <eClassifiers xsi:type="ecore:EClass" name="BasicTranscription">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="commonTimeLine" eType="#//CommonTimeLine"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metaInformation" eType="#//MetaInformation"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="speakertable" upperBound="-1"
+        eType="#//Speaker" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tiers" upperBound="-1"
+        eType="#//Tier" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MetaInformation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="projectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transcriptionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referencedFile" eType="#//URL"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="udMetaInformations" upperBound="-1"
+        eType="#//UDInformation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transcriptionConvention"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="URL" instanceClassName="java.net.URL"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CommonTimeLine">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TLIs" upperBound="-1" eType="#//TLI"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UDInformation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Speaker">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abbreviation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sex" eType="#//SPEAKER_SEX"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="udSpeakerInformations"
+        upperBound="-1" eType="#//UDInformation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="languageUsed" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="l1" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="l2" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SPEAKER_SEX">
+    <eLiterals name="m"/>
+    <eLiterals name="f" value="1"/>
+    <eLiterals name="u" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tier">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="displayName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TIER_TYPE"
+        unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="events" upperBound="-1"
+        eType="#//Event" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="speaker" eType="#//Speaker"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="udTierInformations" upperBound="-1"
+        eType="#//UDInformation" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TIER_TYPE">
+    <eLiterals name="t"/>
+    <eLiterals name="d" value="1"/>
+    <eLiterals name="a" value="2"/>
+    <eLiterals name="l" value="3"/>
+    <eLiterals name="u" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Event">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="udInformations" upperBound="-1"
+        eType="#//UDInformation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="start" eType="#//TLI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="end" eType="#//TLI"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="medium" eType="#//EVENT_MEDIUM"
+        defaultValueLiteral="" unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="#//URL"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TLI">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TIME_TYPE"
+        defaultValueLiteral="" unsettable="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TIME_TYPE">
+    <eLiterals name="unsp"/>
+    <eLiterals name="user" value="1"/>
+    <eLiterals name="othr" value="2"/>
+    <eLiterals name="intp" value="3"/>
+    <eLiterals name="appl" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EVENT_MEDIUM">
+    <eLiterals name="aud"/>
+    <eLiterals name="vid" value="1"/>
+    <eLiterals name="img" value="2"/>
+    <eLiterals name="txt" value="3"/>
+    <eLiterals name="oth" value="4"/>
+  </eClassifiers>
+</ecore:EPackage>

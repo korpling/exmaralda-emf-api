@@ -1,0 +1,139 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>TLI</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getTime <em>Time</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getType <em>Type</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getId <em>Id</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTLI()
+ * @model
+ * @generated
+ */
+public interface TLI extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Time</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Time</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Time</em>' attribute.
+	 * @see #setTime(String)
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTLI_Time()
+	 * @model
+	 * @generated
+	 */
+	String getTime();
+
+	/**
+	 * Sets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getTime <em>Time</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Time</em>' attribute.
+	 * @see #getTime()
+	 * @generated
+	 */
+	void setTime(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Type</b></em>' attribute.
+	 * The default value is <code>""</code>.
+	 * The literals are from the enumeration {@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TIME_TYPE}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Type</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Type</em>' attribute.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TIME_TYPE
+	 * @see #isSetType()
+	 * @see #unsetType()
+	 * @see #setType(TIME_TYPE)
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTLI_Type()
+	 * @model default="" unsettable="true"
+	 * @generated
+	 */
+	TIME_TYPE getType();
+
+	/**
+	 * Sets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getType <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Type</em>' attribute.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TIME_TYPE
+	 * @see #isSetType()
+	 * @see #unsetType()
+	 * @see #getType()
+	 * @generated
+	 */
+	void setType(TIME_TYPE value);
+
+	/**
+	 * Unsets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getType <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isSetType()
+	 * @see #getType()
+	 * @see #setType(TIME_TYPE)
+	 * @generated
+	 */
+	void unsetType();
+
+	/**
+	 * Returns whether the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getType <em>Type</em>}' attribute is set.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return whether the value of the '<em>Type</em>' attribute is set.
+	 * @see #unsetType()
+	 * @see #getType()
+	 * @see #setType(TIME_TYPE)
+	 * @generated
+	 */
+	boolean isSetType();
+
+	/**
+	 * Returns the value of the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Id</em>' attribute.
+	 * @see #setId(String)
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTLI_Id()
+	 * @model
+	 * @generated
+	 */
+	String getId();
+
+	/**
+	 * Sets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getId <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Id</em>' attribute.
+	 * @see #getId()
+	 * @generated
+	 */
+	void setId(String value);
+
+} // TLI

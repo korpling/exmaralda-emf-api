@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+    <leaf bla= "6">
+    </leaf>
+    <leaf/>
+    <leaf>
+        <?apache include file="fusszeile.html" ?>
+        <leaf>
+            h&#196;llo wie gehts
+            <leaf/>
+            <img src= "bla.gif" height= "5"/>
+        </leaf>
+    </leaf>
+    <leaf>
+        <!-- ksbhiwbirhifvbfvbsdibvdivbeivbiv -->
+    </leaf>
+</root>
