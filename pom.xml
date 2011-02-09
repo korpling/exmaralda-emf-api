@@ -143,6 +143,7 @@
 	                <Bundle-Version>${project.version}</Bundle-Version>
 	                <Bundle-RequiredExecutionEnvironment>JavaSE-1.6</Bundle-RequiredExecutionEnvironment>
 	                <Export-Package>de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda; de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.exceptions; de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.resources</Export-Package>
+	                <Include-Resource>{maven-resources}, LICENSE, NOTICE</Include-Resource>
 	           </instructions>
 			</configuration>
 		</plugin>      
