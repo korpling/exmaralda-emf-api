@@ -20,7 +20,7 @@
     <notice.file>${basedir}/NOTICE</notice.file>
   </properties>
   <scm>
-    <developerConnection>scm:svn:https://korpling.german.hu-berlin.de/svn/saltnpepper/Misc/EXMARaLDA/trunk</developerConnection>
+    <developerConnection>scm:svn:https://korpling.german.hu-berlin.de/svn/saltnpepper/Misc/EXMARaLDAModel/trunk</developerConnection>
   </scm>
   <distributionManagement>
     <repository>
