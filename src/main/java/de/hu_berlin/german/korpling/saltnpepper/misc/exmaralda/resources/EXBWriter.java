@@ -94,7 +94,7 @@ public class EXBWriter
 								{
 									//udinfo cannot has an empty name
 									if (	(udInfo.getAttributeName()!= null) &&
-											(!udInfo.getAttributeName().equalsIgnoreCase("")))
+											(!udInfo.getAttributeName().equals("")))
 									{	
 										fileWriter.print("<ud-information");
 										fileWriter.print(" attribute-name=\""+udInfo.getAttributeName()+"\">");
@@ -188,7 +188,7 @@ public class EXBWriter
 									{
 										//udinfo cannot has an empty name
 										if (	(udInfo.getAttributeName()!= null) &&
-												(!udInfo.getAttributeName().equalsIgnoreCase("")))
+												(!udInfo.getAttributeName().equals("")))
 										{	
 											fileWriter.print("<ud-information");
 											fileWriter.print(" attribute-name=\""+udInfo.getAttributeName()+"\">");
@@ -260,7 +260,7 @@ public class EXBWriter
 								{
 									//udinfo cannot has an empty name
 									if (	(udInfo.getAttributeName()!= null) &&
-											(!udInfo.getAttributeName().equalsIgnoreCase("")))
+											(!udInfo.getAttributeName().equals("")))
 									{	
 										fileWriter.print("<ud-information");
 										fileWriter.print(" attribute-name=\""+udInfo.getAttributeName()+"\">");
@@ -297,7 +297,7 @@ public class EXBWriter
 									{
 										//udinfo cannot has an empty name
 										if (	(udInfo.getAttributeName()!= null) &&
-												(!udInfo.getAttributeName().equalsIgnoreCase("")))
+												(!udInfo.getAttributeName().equals("")))
 										{	
 											fileWriter.print("<ud-information");
 											fileWriter.print(" attribute-name=\""+udInfo.getAttributeName()+"\">");
@@ -309,7 +309,7 @@ public class EXBWriter
 								}
 								//print text
 								if (	(event.getValue()!= null)&&
-										(!event.getValue().equalsIgnoreCase("")))
+										(!event.getValue().equals("")))
 									fileWriter.print(event.getValue());
 								fileWriter.println("</event>");
 							}
