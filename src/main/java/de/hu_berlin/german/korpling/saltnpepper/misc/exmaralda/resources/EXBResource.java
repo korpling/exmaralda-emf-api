@@ -18,13 +18,18 @@
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.resources;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 import org.eclipse.emf.ecore.resource.impl.ResourceImpl;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
@@ -79,18 +84,21 @@ public class EXBResource extends ResourceImpl
 		
 	        xmlReader= parser.getXMLReader();
 
-	        //create and set content handler
+	        
+	        
 	        EXBReader exbReader= new EXBReader();
 	        exbReader.setExmaraldaFile(exmaraldaFile);
 	        exbReader.setBasicTranscription(basicTranscription);
 	        xmlReader.setContentHandler(exbReader);
 	        
-	        //setting LexicalHandler to read DTD
-	        xmlReader.setProperty("http://xml.org/sax/properties/lexical-handler", exbReader);
-	        xmlReader.setContentHandler(exbReader);
-	        
-	        xmlReader.parse(exmaraldaFile.getAbsolutePath());
-	        
+	        InputStream inputStream= new FileInputStream(exmaraldaFile);
+			Reader reader = new InputStreamReader(inputStream,"UTF-8");
+			 
+			InputSource is = new InputSource(reader);
+			is.setEncoding("UTF-8");
+			 
+			xmlReader.parse(is);
+			
 	    } catch (ParserConfigurationException e) {
         	throw new ExmaraldaException("Cannot load exmaralda from resource '"+exmaraldaFile.getAbsolutePath()+"'.", e);
         } catch (SAXException e) {
