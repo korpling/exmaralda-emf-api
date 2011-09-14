@@ -13,7 +13,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
             uri="exmaralda"
-            class="de.hub.corpling.exmaralda.ExmaraldaPackage"
+            class="de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage"
             genModel="model/exmaralda.genmodel"/>
    </extension>
 
