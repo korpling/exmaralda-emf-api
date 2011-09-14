@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>de.hu_berlin.german.korpling.saltnpepper.misc</groupId>
-  <artifactId>EXMARaLDAModel</artifactId>
-  <version>1.1.0</version>
+  <groupId>de.hu_berlin.german.korpling.saltnpepper</groupId>
+  <artifactId>misc-EXMARaLDAModel</artifactId>
+  <version>1.1.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <licenses>
     <license>
@@ -176,6 +176,19 @@
           </instructions>
         </configuration>
       </plugin>
+       <!-- start: Plugin for automatic releasing -->
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <tagBase>
+           https://korpling.german.hu-berlin.de/svn/saltnpepper/PepperModules/EXMARaLDAModel/tags/
+          </tagBase>
+          <releaseProfiles>release</releaseProfiles>
+          <goals>assembly:single deploy</goals>
+        </configuration>
+      </plugin>
+      <!-- start: creation of bundle jar -->
     </plugins>
     <finalName>${project.groupId}.${project.artifactId}_${project.version}</finalName>
   </build>
