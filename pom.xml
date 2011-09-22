@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.hu_berlin.german.korpling.saltnpepper</groupId>
   <artifactId>misc-EXMARaLDAModel</artifactId>
-  <version>1.1.2-SNAPSHOT</version>
+  <version>1.1.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <licenses>
     <license>
@@ -185,7 +185,7 @@
            https://korpling.german.hu-berlin.de/svn/saltnpepper/Misc/EXMARaLDAModel/tags/
           </tagBase>
           <releaseProfiles>release</releaseProfiles>
-          <goals>assembly:single deploy</goals>
+          <goals>package assembly:single deploy</goals>
         </configuration>
       </plugin>
       <!-- start: creation of bundle jar -->
