@@ -77,32 +77,44 @@ public class EXBResource extends ResourceImpl
 		
 		SAXParser parser;
         XMLReader xmlReader;
-        try {
-        	SAXParserFactory factory= SAXParserFactory.newInstance();
+        EXBReader exbReader= new EXBReader();
+        exbReader.setExmaraldaFile(exmaraldaFile);
+        exbReader.setBasicTranscription(basicTranscription);
         
+        SAXParserFactory factory= SAXParserFactory.newInstance();
+        
+        try
+        {
 			parser= factory.newSAXParser();
-		
 	        xmlReader= parser.getXMLReader();
-
-	        
-	        
-	        EXBReader exbReader= new EXBReader();
-	        exbReader.setExmaraldaFile(exmaraldaFile);
-	        exbReader.setBasicTranscription(basicTranscription);
 	        xmlReader.setContentHandler(exbReader);
-	        
+        } catch (ParserConfigurationException e) {
+        	throw new ExmaraldaException("Cannot load exmaralda from resource '"+exmaraldaFile.getAbsolutePath()+"'.", e);
+        }catch (Exception e) {
+	    	throw new ExmaraldaException("Cannot load exmaralda from resource '"+exmaraldaFile.getAbsolutePath()+"'.", e);
+		}
+        try {
 	        InputStream inputStream= new FileInputStream(exmaraldaFile);
-			Reader reader = new InputStreamReader(inputStream,"UTF-8");
+			Reader reader = new InputStreamReader(inputStream, "UTF-8");
 			 
 			InputSource is = new InputSource(reader);
 			is.setEncoding("UTF-8");
 			 
 			xmlReader.parse(is);
 			
-	    } catch (ParserConfigurationException e) {
-        	throw new ExmaraldaException("Cannot load exmaralda from resource '"+exmaraldaFile.getAbsolutePath()+"'.", e);
-        } catch (SAXException e) {
-        	throw new ExmaraldaException("Cannot load exmaralda from resource '"+exmaraldaFile.getAbsolutePath()+"'.", e);
+	    
+        } catch (SAXException e) 
+        {
+        	
+            try
+            {
+				parser= factory.newSAXParser();
+		        xmlReader= parser.getXMLReader();
+		        xmlReader.setContentHandler(exbReader);
+				xmlReader.parse(exmaraldaFile.getAbsolutePath());
+            }catch (Exception e1) {
+            	throw new ExmaraldaException("Cannot load exmaralda from resource '"+exmaraldaFile.getAbsolutePath()+"'.", e1);
+			}
 		}
 	}
 }
