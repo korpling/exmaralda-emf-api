@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.hu_berlin.german.korpling.saltnpepper</groupId>
   <artifactId>misc-EXMARaLDAModel</artifactId>
-  <version>1.1.3-SNAPSHOT</version>
+  <version>1.1.2-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <licenses>
     <license>
@@ -22,19 +22,20 @@
   <scm>
     <developerConnection>scm:svn:https://korpling.german.hu-berlin.de/svn/saltnpepper/Misc/EXMARaLDAModel/trunk</developerConnection>
   </scm>
-  <distributionManagement>
-    <repository>
-      <id>SaltNPepper Repository</id>
-      <name>SaltNPepper Repository</name>
-      <url>file:///home/annis/public_html/maven2/saltnpepper</url>
-    </repository>
-  </distributionManagement>
   <repositories>
     <repository>
-      <id>SaltNPepper Repository</id>
-      <url>https://korpling.german.hu-berlin.de/~annis/maven2/saltnpepper/</url>
+      <id>korpling</id>
+      <name>korpling maven repo</name>
+      <url>http://korpling.german.hu-berlin.de/maven2</url>
     </repository>
   </repositories>
+  <distributionManagement>
+    <repository>
+      <id>korpling</id>
+      <name>korpling maven repo</name>
+      <url>file:///srv/www/maven2/</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
