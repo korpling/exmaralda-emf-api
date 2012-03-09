@@ -17,28 +17,30 @@
  */
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl;
 
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.CommonTimeLine;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.MetaInformation;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Speaker;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
-
 import java.util.Collection;
+import java.util.Map;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
+import org.eclipse.emf.ecore.util.EContentAdapter;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.CommonTimeLine;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicFactory;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.MetaInformation;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Speaker;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,11 +119,11 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
+	 * Returns the {@link CommonTimeLine} object. If no one is already set, one will be created.
 	 */
 	public CommonTimeLine getCommonTimeLine() {
+		if (commonTimeLine== null)
+			this.commonTimeLine= ExmaraldaBasicFactory.eINSTANCE.createCommonTimeLine();
 		return commonTimeLine;
 	}
 
@@ -159,6 +161,82 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.BASIC_TRANSCRIPTION__COMMON_TIME_LINE, newCommonTimeLine, newCommonTimeLine));
 	}
 
+	/**
+	 * This method must be implemented and return true, if this object shall be notified, when adding objects into contained
+	 * lists (Containment relation).
+	 * @return returns always <code>true</code>
+	 */
+	@Override
+	public boolean eNotificationRequired() {
+		return true;
+	}
+	
+	/**
+	 * This method is invoked by the EMF framework, when something has changed in a list being contained by
+	 * this object.
+	 * Listens to when a new {@link Tier} object is added.
+	 */
+	@Override
+	public void eNotify(Notification notification) 
+	{
+		super.eNotify(notification);		
+		
+		if (notification.getFeature() instanceof EReference) 
+		{
+			EReference ref = (EReference) notification.getFeature();
+			if(ref.equals(ExmaraldaBasicPackage.Literals.BASIC_TRANSCRIPTION__TIERS)) 
+			{
+				Object newValue= notification.getNewValue();
+				switch (notification.getEventType()) 
+				{
+					case Notification.ADD:
+					{
+						if (newValue instanceof Tier)
+						{
+							((Tier) newValue).eAdapters().add(adapter);
+						}
+						break;
+					}
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Adapter object to react on changes in {@link Tier} objects being contained by this object. 
+	 */
+	private BasicTranscriptionAdapter adapter= new BasicTranscriptionAdapter();
+	/**
+	 * An adapter class listening to changes in {@link Tier} object, for instance, when an {@link Event} is added. 
+	 *  
+	 * @author Florian Zipser
+	 *
+	 */
+	private class BasicTranscriptionAdapter extends EContentAdapter
+	{
+		public void notifyChanged(Notification notification) 
+		{
+			System.out.println("CHANGED: "+ notification);
+			switch (notification.getEventType()) {
+			case Notification.ADD:
+				if (notification.getNewValue() instanceof Event)
+				{
+					Event event= (Event) notification.getNewValue();
+					if (event.getStart()!= null)
+					{
+						EList<Event> events= tli2Events.get(event.getStart());
+					}	
+					//start: start value of tli
+//					tli2Events.put(key, value)
+					notification.getNewValue();
+					System.out.println("-----------------> HELLO TIER added");
+				}
+				break;
+			}
+			
+		}
+	}
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -224,6 +302,23 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 			tiers = new EObjectContainmentEList<Tier>(Tier.class, this, ExmaraldaBasicPackage.BASIC_TRANSCRIPTION__TIERS);
 		}
 		return tiers;
+	}
+	/**
+	 * Contains all {@link TLI} objects having corresponding {@link Event} objects.
+	 */
+	private Map<TLI, EList<Event>> tli2Events= null;
+	
+	/**
+	 * {@inheritDoc BasicTranscription#getEventsByTLI(TLI)}
+	 */
+	public EList<Event> getEventsByTLI(TLI tli) 
+	{
+		EList<Event> retVal= null;
+		if (tli2Events!= null)
+		{
+			retVal= tli2Events.get(tli);
+		}
+		return(retVal);
 	}
 
 	/**
@@ -335,14 +430,6 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 				return tiers != null && !tiers.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	protected void finalize() throws Throwable
-	{
-//		if (this.getSpeakertable().get(0)!= null)
-//			System.out.println("=====================> exmaralda finalize of: "+ this.getSpeakertable().get(0).getAbbreviation());
-//		else
-//			System.out.println("=====================> exmaralda finalize of:  no abbriviation");
 	}
     
 } //BasicTranscriptionImpl

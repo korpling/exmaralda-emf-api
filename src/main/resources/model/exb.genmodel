@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.hub.corpling.Exmaralda/src"
-    modelPluginID="de.hub.corpling.Exmaralda" modelName="Exb" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="6.0" copyrightFields="false">
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/misc-EXMARaLDAModel/src/main/java"
+    modelPluginID="de.hu_berlin.german.korpling.saltnpepper" modelName="Exb" testsDirectory="/misc-EXMARaLDAModel/src/test/java"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false">
   <foreignModel>exb.ecore</foreignModel>
-  <genPackages prefix="ExmaraldaBasic" basePackage="de.hub.corpling.exmaralda" disposableProviderFactory="true"
-      ecorePackage="exb.ecore#/">
+  <genPackages prefix="ExmaraldaBasic" basePackage="de.hu_berlin.german.korpling.saltnpepper.misc"
+      disposableProviderFactory="true" fileExtensions="exmaralda" ecorePackage="exb.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="exb.ecore#//SPEAKER_SEX">
       <genEnumLiterals ecoreEnumLiteral="exb.ecore#//SPEAKER_SEX/m"/>
       <genEnumLiterals ecoreEnumLiteral="exb.ecore#//SPEAKER_SEX/f"/>
@@ -39,6 +39,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//BasicTranscription/metaInformation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//BasicTranscription/speakertable"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//BasicTranscription/tiers"/>
+      <genOperations ecoreOperation="exb.ecore#//BasicTranscription/getEventsByTLI">
+        <genParameters ecoreParameter="exb.ecore#//BasicTranscription/getEventsByTLI/tli"/>
+      </genOperations>
     </genClasses>
     <genClasses ecoreClass="exb.ecore#//MetaInformation">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//MetaInformation/projectName"/>
@@ -46,7 +49,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//MetaInformation/referencedFile"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//MetaInformation/comment"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//MetaInformation/udMetaInformations"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//MetaInformation/transcriptionConversion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//MetaInformation/transcriptionConvention"/>
     </genClasses>
     <genClasses ecoreClass="exb.ecore#//CommonTimeLine">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//CommonTimeLine/TLIs"/>
@@ -71,6 +74,8 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//Tier/type"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference exb.ecore#//Tier/events"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute exb.ecore#//Tier/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference exb.ecore#//Tier/speaker"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//Tier/udTierInformations"/>
     </genClasses>
     <genClasses ecoreClass="exb.ecore#//Event">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference exb.ecore#//Event/udInformations"/>

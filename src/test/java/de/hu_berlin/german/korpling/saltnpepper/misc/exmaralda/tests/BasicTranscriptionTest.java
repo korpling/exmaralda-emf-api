@@ -18,7 +18,10 @@
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.tests;
 
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicFactory;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
 
 import junit.framework.TestCase;
 
@@ -28,6 +31,12 @@ import junit.textui.TestRunner;
  * <!-- begin-user-doc -->
  * A test case for the model object '<em><b>Basic Transcription</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following operations are tested:
+ * <ul>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription#getEventsByTLI(de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI) <em>Get Events By TLI</em>}</li>
+ * </ul>
+ * </p>
  * @generated
  */
 public class BasicTranscriptionTest extends TestCase {
@@ -101,6 +110,37 @@ public class BasicTranscriptionTest extends TestCase {
 		setFixture(null);
 	}
 
-	public void testAlibiTest()
-	{}
+	/**
+	 * Checks if all inserted {@link TLI} and {@link Event} objects are connected, and returned correctly.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription#getEventsByTLI(de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI)
+	 */
+	public void testGetEventsByTLI__TLI() 
+	{
+		TLI tli1= ExmaraldaBasicFactory.eINSTANCE.createTLI();
+		this.getFixture().getCommonTimeLine().getTLIs().add(tli1);
+		TLI tli2= ExmaraldaBasicFactory.eINSTANCE.createTLI();
+		this.getFixture().getCommonTimeLine().getTLIs().add(tli2);
+		TLI tli3= ExmaraldaBasicFactory.eINSTANCE.createTLI();
+		this.getFixture().getCommonTimeLine().getTLIs().add(tli3);
+		TLI tli4= ExmaraldaBasicFactory.eINSTANCE.createTLI();
+		this.getFixture().getCommonTimeLine().getTLIs().add(tli4);
+		
+		Tier tier= ExmaraldaBasicFactory.eINSTANCE.createTier();
+		this.getFixture().getTiers().add(tier);
+		
+		Event event1= ExmaraldaBasicFactory.eINSTANCE.createEvent();
+		event1.setStart(tli1);
+		event1.setEnd(tli2);
+		tier.getEvents().add(event1);
+		
+		assertNotNull(this.getFixture().getEventsByTLI(tli1));
+		assertEquals(1, this.getFixture().getEventsByTLI(tli1).size());
+		assertTrue(this.getFixture().getEventsByTLI(tli1).contains(event1));
+		
+		assertNotNull(this.getFixture().getEventsByTLI(tli2));
+		assertEquals(1, this.getFixture().getEventsByTLI(tli2).size());
+		assertTrue(this.getFixture().getEventsByTLI(tli2).contains(event1));
+		
+		Event event2= ExmaraldaBasicFactory.eINSTANCE.createEvent();
+	}
 } //BasicTranscriptionTest

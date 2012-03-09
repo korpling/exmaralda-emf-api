@@ -74,7 +74,7 @@ public class ExmaraldaBasicExample {
 		if (args.length == 0) {
 			System.out.println("Enter a list of file paths or URIs that have content like this:");
 			try {
-				Resource resource = resourceSet.createResource(URI.createURI("http:///My.exmaraldabasic"));
+				Resource resource = resourceSet.createResource(URI.createURI("http:///My.exmaralda"));
 				BasicTranscription root = ExmaraldaBasicFactory.eINSTANCE.createBasicTranscription();
 				resource.getContents().add(root);
 				resource.save(System.out, null);
@@ -92,7 +92,7 @@ public class ExmaraldaBasicExample {
 				// Otherwise, it's directly treated as a URL.
 				//
 				File file = new File(args[i]);
-				URI uri = file.isFile() ? URI.createFileURI(file.getAbsolutePath()): URI.createURI(args[0]);
+				URI uri = file.isFile() ? URI.createFileURI(file.getAbsolutePath()): URI.createURI(args[i]);
 
 				try {
 					// Demand load resource for this file.

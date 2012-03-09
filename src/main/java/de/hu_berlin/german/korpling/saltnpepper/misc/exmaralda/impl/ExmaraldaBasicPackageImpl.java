@@ -31,6 +31,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -771,6 +772,9 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		initEReference(getBasicTranscription_MetaInformation(), this.getMetaInformation(), null, "metaInformation", null, 0, 1, BasicTranscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBasicTranscription_Speakertable(), this.getSpeaker(), null, "speakertable", null, 0, -1, BasicTranscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBasicTranscription_Tiers(), this.getTier(), null, "tiers", null, 0, -1, BasicTranscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		EOperation op = addEOperation(basicTranscriptionEClass, this.getEvent(), "getEventsByTLI", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getTLI(), "tli", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(metaInformationEClass, MetaInformation.class, "MetaInformation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMetaInformation_ProjectName(), ecorePackage.getEString(), "projectName", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -46,6 +46,7 @@ public class ExbAllTests extends TestSuite {
 	 */
 	public static Test suite() {
 		TestSuite suite = new ExbAllTests("Exb Tests");
+		suite.addTest(ExmaraldaBasicTests.suite());
 		return suite;
 	}
 

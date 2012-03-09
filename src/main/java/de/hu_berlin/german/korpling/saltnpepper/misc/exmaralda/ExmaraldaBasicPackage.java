@@ -46,7 +46,7 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "exmaraldaBasic";
+	String eNAME = "exmaralda";
 
 	/**
 	 * The package namespace URI.

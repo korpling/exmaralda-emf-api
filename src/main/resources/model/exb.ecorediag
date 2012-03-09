@@ -8,13 +8,17 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_LuCyN5lOEd6mosHo_8YOEg"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_LuCyOJlOEd6mosHo_8YOEg" type="5002">
+      <children xmi:type="notation:Node" xmi:id="_DwadwGoIEeGtKNj5_LoafA" type="2002">
+        <element xmi:type="ecore:EOperation" href="exb.ecore#//BasicTranscription/getEventsByTLI"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DwadwWoIEeGtKNj5_LoafA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_LuCyOZlOEd6mosHo_8YOEg"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_LuCyOplOEd6mosHo_8YOEg"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_LuCyO5lOEd6mosHo_8YOEg"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_LuCyMZlOEd6mosHo_8YOEg" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="exb.ecore#//BasicTranscription"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LuCyMplOEd6mosHo_8YOEg" x="240" y="105" width="158" height="71"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LuCyMplOEd6mosHo_8YOEg" x="240" y="105" width="208" height="71"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_WG8fsJlOEd6mosHo_8YOEg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_WHCmUJlOEd6mosHo_8YOEg" type="4001"/>
@@ -255,7 +259,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_ye46wZlQEd6mosHo_8YOEg" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="exb.ecore#//Event"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ye46wplQEd6mosHo_8YOEg" x="155" y="450" width="151" height="91"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ye46wplQEd6mosHo_8YOEg" x="155" y="450" width="208" height="91"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_8uVxUJlQEd6mosHo_8YOEg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_8uVxU5lQEd6mosHo_8YOEg" type="4001"/>
@@ -283,7 +287,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_8uVxUZlQEd6mosHo_8YOEg" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="exb.ecore#//TLI"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8uVxUplQEd6mosHo_8YOEg" x="-100" y="470" width="133" height="88"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8uVxUplQEd6mosHo_8YOEg" x="-155" y="470" width="188" height="88"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_B0M34JlREd6mosHo_8YOEg" type="1005">
     <children xmi:type="notation:Node" xmi:id="_B0M345lREd6mosHo_8YOEg" type="4010"/>
