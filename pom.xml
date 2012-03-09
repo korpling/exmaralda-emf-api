@@ -20,7 +20,7 @@
     <notice.file>${basedir}/NOTICE</notice.file>
   </properties>
   <scm>
-    <developerConnection>scm:svn:https://korpling.german.hu-berlin.de/svn/saltnpepper/Misc/EXMARaLDAModel/trunk</developerConnection>
+    <developerConnection>scm:svn:https://korpling.german.hu-berlin.de/svn/models/exmaralda-api/trunk</developerConnection>
   </scm>
   <repositories>
     <repository>
@@ -183,7 +183,7 @@
         <version>2.1</version>
         <configuration>
           <tagBase>
-           https://korpling.german.hu-berlin.de/svn/saltnpepper/Misc/EXMARaLDAModel/tags/
+           https://korpling.german.hu-berlin.de/svn/saltnpepper/models/exmaralda-api/tags/
           </tagBase>
           <releaseProfiles>release</releaseProfiles>
           <goals>package assembly:single deploy</goals>
