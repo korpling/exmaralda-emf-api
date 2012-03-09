@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="exmaraldaBasic"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="exmaralda"
     nsURI="exb" nsPrefix="exb">
   <eClassifiers xsi:type="ecore:EClass" name="BasicTranscription">
     <eStructuralFeatures xsi:type="ecore:EReference" name="commonTimeLine" eType="#//CommonTimeLine"
@@ -56,7 +56,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TIER_TYPE"
         unsettable="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="events" upperBound="-1"
-        eType="#//Event" containment="true"/>
+        eType="#//Event" containment="true" eOpposite="#//Event/tier"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="speaker" eType="#//Speaker"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="udTierInformations" upperBound="-1"
@@ -72,18 +72,23 @@
   <eClassifiers xsi:type="ecore:EClass" name="Event">
     <eStructuralFeatures xsi:type="ecore:EReference" name="udInformations" upperBound="-1"
         eType="#//UDInformation" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="start" eType="#//TLI"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="end" eType="#//TLI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="start" eType="#//TLI" eOpposite="#//TLI/startingEvents"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="end" eType="#//TLI" eOpposite="#//TLI/endingEvents"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="medium" eType="#//EVENT_MEDIUM"
         defaultValueLiteral="" unsettable="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="#//URL"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tier" eType="#//Tier" eOpposite="#//Tier/events"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TLI">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="time" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//TIME_TYPE"
         defaultValueLiteral="" unsettable="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="startingEvents" upperBound="-1"
+        eType="#//Event" eOpposite="#//Event/start"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="endingEvents" upperBound="-1"
+        eType="#//Event" eOpposite="#//Event/end"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TIME_TYPE">
     <eLiterals name="unsp"/>

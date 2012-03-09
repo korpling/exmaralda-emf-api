@@ -17,28 +17,28 @@
  */
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl;
 
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.CommonTimeLine;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.MetaInformation;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Speaker;
-import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
-
 import java.util.Collection;
+import java.util.Map;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.CommonTimeLine;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicFactory;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.MetaInformation;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Speaker;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,11 +117,11 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
+	 * Returns the {@link CommonTimeLine} object. If no one is already set, one will be created.
 	 */
 	public CommonTimeLine getCommonTimeLine() {
+		if (commonTimeLine== null)
+			this.commonTimeLine= ExmaraldaBasicFactory.eINSTANCE.createCommonTimeLine();
 		return commonTimeLine;
 	}
 
@@ -158,7 +158,7 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.BASIC_TRANSCRIPTION__COMMON_TIME_LINE, newCommonTimeLine, newCommonTimeLine));
 	}
-
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -224,6 +224,23 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 			tiers = new EObjectContainmentEList<Tier>(Tier.class, this, ExmaraldaBasicPackage.BASIC_TRANSCRIPTION__TIERS);
 		}
 		return tiers;
+	}
+	/**
+	 * Contains all {@link TLI} objects having corresponding {@link Event} objects.
+	 */
+	private Map<TLI, EList<Event>> tli2Events= null;
+	
+	/**
+	 * {@inheritDoc BasicTranscription#getEventsByTLI(TLI)}
+	 */
+	public EList<Event> getEventsByTLI(TLI tli) 
+	{
+		EList<Event> retVal= null;
+		if (tli2Events!= null)
+		{
+			retVal= tli2Events.get(tli);
+		}
+		return(retVal);
 	}
 
 	/**
@@ -335,14 +352,6 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 				return tiers != null && !tiers.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	protected void finalize() throws Throwable
-	{
-//		if (this.getSpeakertable().get(0)!= null)
-//			System.out.println("=====================> exmaralda finalize of: "+ this.getSpeakertable().get(0).getAbbreviation());
-//		else
-//			System.out.println("=====================> exmaralda finalize of:  no abbriviation");
 	}
     
 } //BasicTranscriptionImpl

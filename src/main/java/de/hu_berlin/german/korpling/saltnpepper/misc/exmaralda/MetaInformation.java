@@ -108,7 +108,7 @@ public interface MetaInformation extends EObject {
 	 * @return the value of the '<em>Referenced File</em>' attribute.
 	 * @see #setReferencedFile(URL)
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getMetaInformation_ReferencedFile()
-	 * @model dataType="de.hub.corpling.exmaralda.exmaraldaBasic.URL"
+	 * @model dataType="de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.URL"
 	 * @generated
 	 */
 	URL getReferencedFile();

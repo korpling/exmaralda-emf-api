@@ -17,8 +17,10 @@
  */
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.tests;
 
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicFactory;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
 
 import junit.framework.TestCase;
 
@@ -101,6 +103,21 @@ public class TLITest extends TestCase {
 		setFixture(null);
 	}
 
-	public void testAlibiTest()
-	{}
+	/**
+	 * Checks if the reverse connection to a {@link Event} object is working correctly. Checks the methods 
+	 * {@link TLI#getStartingEvents()} and {@link TLI#getEndingEvents()}.
+	 */
+	public void testReverseConnectionToEvent()
+	{
+		Event event1= ExmaraldaBasicFactory.eINSTANCE.createEvent();
+		event1.setStart(getFixture());
+		assertNotNull(this.getFixture().getStartingEvents());
+		assertEquals(1, this.getFixture().getStartingEvents().size());
+		assertTrue(this.getFixture().getStartingEvents().contains(event1));
+		
+		event1.setEnd(getFixture());
+		assertNotNull(this.getFixture().getEndingEvents());
+		assertEquals(1, this.getFixture().getEndingEvents().size());
+		assertTrue(this.getFixture().getEndingEvents().contains(event1));
+	}
 } //TLITest

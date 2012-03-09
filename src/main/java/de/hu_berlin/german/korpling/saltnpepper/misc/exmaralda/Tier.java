@@ -155,6 +155,7 @@ public interface Tier extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Events</b></em>' containment reference list.
 	 * The list contents are of type {@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event}.
+	 * It is bidirectional and its opposite is '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getTier <em>Tier</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Events</em>' reference list isn't clear,
@@ -163,7 +164,8 @@ public interface Tier extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Events</em>' containment reference list.
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTier_Events()
-	 * @model containment="true"
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getTier
+	 * @model opposite="tier" containment="true"
 	 * @generated
 	 */
 	EList<Event> getEvents();

@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getMedium <em>Medium</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getUrl <em>Url</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getValue <em>Value</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getTier <em>Tier</em>}</li>
  * </ul>
  * </p>
  *
@@ -63,6 +64,7 @@ public interface Event extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Start</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getStartingEvents <em>Starting Events</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Start</em>' reference isn't clear,
@@ -72,7 +74,8 @@ public interface Event extends EObject {
 	 * @return the value of the '<em>Start</em>' reference.
 	 * @see #setStart(TLI)
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getEvent_Start()
-	 * @model
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getStartingEvents
+	 * @model opposite="startingEvents"
 	 * @generated
 	 */
 	TLI getStart();
@@ -89,6 +92,7 @@ public interface Event extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>End</b></em>' reference.
+	 * It is bidirectional and its opposite is '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getEndingEvents <em>Ending Events</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>End</em>' reference isn't clear,
@@ -98,7 +102,8 @@ public interface Event extends EObject {
 	 * @return the value of the '<em>End</em>' reference.
 	 * @see #setEnd(TLI)
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getEvent_End()
-	 * @model
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getEndingEvents
+	 * @model opposite="endingEvents"
 	 * @generated
 	 */
 	TLI getEnd();
@@ -181,7 +186,7 @@ public interface Event extends EObject {
 	 * @return the value of the '<em>Url</em>' attribute.
 	 * @see #setUrl(URL)
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getEvent_Url()
-	 * @model dataType="de.hub.corpling.exmaralda.exmaraldaBasic.URL"
+	 * @model dataType="de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.URL"
 	 * @generated
 	 */
 	URL getUrl();
@@ -221,5 +226,33 @@ public interface Event extends EObject {
 	 * @generated
 	 */
 	void setValue(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Tier</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier#getEvents <em>Events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Tier</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tier</em>' container reference.
+	 * @see #setTier(Tier)
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getEvent_Tier()
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier#getEvents
+	 * @model opposite="events" transient="false"
+	 * @generated
+	 */
+	Tier getTier();
+
+	/**
+	 * Sets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getTier <em>Tier</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Tier</em>' container reference.
+	 * @see #getTier()
+	 * @generated
+	 */
+	void setTier(Tier value);
 
 } // Event

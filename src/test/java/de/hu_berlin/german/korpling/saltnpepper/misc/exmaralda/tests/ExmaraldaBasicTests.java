@@ -45,7 +45,7 @@ public class ExmaraldaBasicTests extends TestSuite {
 	 * @generated
 	 */
 	public static Test suite() {
-		TestSuite suite = new ExmaraldaBasicTests("exmaraldaBasic Tests");
+		TestSuite suite = new ExmaraldaBasicTests("exmaralda Tests");
 		return suite;
 	}
 

@@ -17,16 +17,23 @@
  */
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl;
 
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TIME_TYPE;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,6 +45,8 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl#getTime <em>Time</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl#getType <em>Type</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl#getId <em>Id</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl#getStartingEvents <em>Starting Events</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl#getEndingEvents <em>Ending Events</em>}</li>
  * </ul>
  * </p>
  *
@@ -112,6 +121,26 @@ public class TLIImpl extends EObjectImpl implements TLI {
 	 * @ordered
 	 */
 	protected String id = ID_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getStartingEvents() <em>Starting Events</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStartingEvents()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Event> startingEvents;
+
+	/**
+	 * The cached value of the '{@link #getEndingEvents() <em>Ending Events</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEndingEvents()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Event> endingEvents;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,6 +254,63 @@ public class TLIImpl extends EObjectImpl implements TLI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Event> getStartingEvents() {
+		if (startingEvents == null) {
+			startingEvents = new EObjectWithInverseResolvingEList<Event>(Event.class, this, ExmaraldaBasicPackage.TLI__STARTING_EVENTS, ExmaraldaBasicPackage.EVENT__START);
+		}
+		return startingEvents;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Event> getEndingEvents() {
+		if (endingEvents == null) {
+			endingEvents = new EObjectWithInverseResolvingEList<Event>(Event.class, this, ExmaraldaBasicPackage.TLI__ENDING_EVENTS, ExmaraldaBasicPackage.EVENT__END);
+		}
+		return endingEvents;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ExmaraldaBasicPackage.TLI__STARTING_EVENTS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getStartingEvents()).basicAdd(otherEnd, msgs);
+			case ExmaraldaBasicPackage.TLI__ENDING_EVENTS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getEndingEvents()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ExmaraldaBasicPackage.TLI__STARTING_EVENTS:
+				return ((InternalEList<?>)getStartingEvents()).basicRemove(otherEnd, msgs);
+			case ExmaraldaBasicPackage.TLI__ENDING_EVENTS:
+				return ((InternalEList<?>)getEndingEvents()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -234,6 +320,10 @@ public class TLIImpl extends EObjectImpl implements TLI {
 				return getType();
 			case ExmaraldaBasicPackage.TLI__ID:
 				return getId();
+			case ExmaraldaBasicPackage.TLI__STARTING_EVENTS:
+				return getStartingEvents();
+			case ExmaraldaBasicPackage.TLI__ENDING_EVENTS:
+				return getEndingEvents();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -243,6 +333,7 @@ public class TLIImpl extends EObjectImpl implements TLI {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -254,6 +345,14 @@ public class TLIImpl extends EObjectImpl implements TLI {
 				return;
 			case ExmaraldaBasicPackage.TLI__ID:
 				setId((String)newValue);
+				return;
+			case ExmaraldaBasicPackage.TLI__STARTING_EVENTS:
+				getStartingEvents().clear();
+				getStartingEvents().addAll((Collection<? extends Event>)newValue);
+				return;
+			case ExmaraldaBasicPackage.TLI__ENDING_EVENTS:
+				getEndingEvents().clear();
+				getEndingEvents().addAll((Collection<? extends Event>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -276,6 +375,12 @@ public class TLIImpl extends EObjectImpl implements TLI {
 			case ExmaraldaBasicPackage.TLI__ID:
 				setId(ID_EDEFAULT);
 				return;
+			case ExmaraldaBasicPackage.TLI__STARTING_EVENTS:
+				getStartingEvents().clear();
+				return;
+			case ExmaraldaBasicPackage.TLI__ENDING_EVENTS:
+				getEndingEvents().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -294,6 +399,10 @@ public class TLIImpl extends EObjectImpl implements TLI {
 				return isSetType();
 			case ExmaraldaBasicPackage.TLI__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
+			case ExmaraldaBasicPackage.TLI__STARTING_EVENTS:
+				return startingEvents != null && !startingEvents.isEmpty();
+			case ExmaraldaBasicPackage.TLI__ENDING_EVENTS:
+				return endingEvents != null && !endingEvents.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

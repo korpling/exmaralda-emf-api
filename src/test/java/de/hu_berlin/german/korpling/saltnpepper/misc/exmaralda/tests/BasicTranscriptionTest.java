@@ -17,12 +17,10 @@
  */
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.tests;
 
+import junit.framework.TestCase;
+import junit.textui.TestRunner;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicFactory;
-
-import junit.framework.TestCase;
-
-import junit.textui.TestRunner;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,7 +98,9 @@ public class BasicTranscriptionTest extends TestCase {
 	protected void tearDown() throws Exception {
 		setFixture(null);
 	}
-
-	public void testAlibiTest()
-	{}
+	
+	public void testAlibi()
+	{
+		//TODO make some real tests
+	}
 } //BasicTranscriptionTest

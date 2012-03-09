@@ -46,7 +46,7 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "exmaraldaBasic";
+	String eNAME = "exmaralda";
 
 	/**
 	 * The package namespace URI.
@@ -503,13 +503,22 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	int EVENT__VALUE = 5;
 
 	/**
+	 * The feature id for the '<em><b>Tier</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVENT__TIER = 6;
+
+	/**
 	 * The number of structural features of the '<em>Event</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EVENT_FEATURE_COUNT = 6;
+	int EVENT_FEATURE_COUNT = 7;
 
 	/**
 	 * The meta object id for the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl <em>TLI</em>}' class.
@@ -549,13 +558,31 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	int TLI__ID = 2;
 
 	/**
+	 * The feature id for the '<em><b>Starting Events</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TLI__STARTING_EVENTS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Ending Events</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TLI__ENDING_EVENTS = 4;
+
+	/**
 	 * The number of structural features of the '<em>TLI</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TLI_FEATURE_COUNT = 3;
+	int TLI_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.SPEAKER_SEX <em>SPEAKER SEX</em>}' enum.
@@ -1053,6 +1080,17 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	EAttribute getEvent_Value();
 
 	/**
+	 * Returns the meta object for the container reference '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getTier <em>Tier</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Tier</em>'.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getTier()
+	 * @see #getEvent()
+	 * @generated
+	 */
+	EReference getEvent_Tier();
+
+	/**
 	 * Returns the meta object for class '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI <em>TLI</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1094,6 +1132,28 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTLI_Id();
+
+	/**
+	 * Returns the meta object for the reference list '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getStartingEvents <em>Starting Events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Starting Events</em>'.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getStartingEvents()
+	 * @see #getTLI()
+	 * @generated
+	 */
+	EReference getTLI_StartingEvents();
+
+	/**
+	 * Returns the meta object for the reference list '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getEndingEvents <em>Ending Events</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Ending Events</em>'.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getEndingEvents()
+	 * @see #getTLI()
+	 * @generated
+	 */
+	EReference getTLI_EndingEvents();
 
 	/**
 	 * Returns the meta object for enum '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.SPEAKER_SEX <em>SPEAKER SEX</em>}'.
@@ -1511,6 +1571,14 @@ public interface ExmaraldaBasicPackage extends EPackage {
 		EAttribute EVENT__VALUE = eINSTANCE.getEvent_Value();
 
 		/**
+		 * The meta object literal for the '<em><b>Tier</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EVENT__TIER = eINSTANCE.getEvent_Tier();
+
+		/**
 		 * The meta object literal for the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.TLIImpl <em>TLI</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1543,6 +1611,22 @@ public interface ExmaraldaBasicPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute TLI__ID = eINSTANCE.getTLI_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Starting Events</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TLI__STARTING_EVENTS = eINSTANCE.getTLI_StartingEvents();
+
+		/**
+		 * The meta object literal for the '<em><b>Ending Events</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TLI__ENDING_EVENTS = eINSTANCE.getTLI_EndingEvents();
 
 		/**
 		 * The meta object literal for the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.SPEAKER_SEX <em>SPEAKER SEX</em>}' enum.
