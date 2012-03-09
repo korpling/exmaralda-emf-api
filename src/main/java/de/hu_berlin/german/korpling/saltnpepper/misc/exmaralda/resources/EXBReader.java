@@ -98,26 +98,17 @@ public class EXBReader extends DefaultHandler2
 		StringBuffer text= new StringBuffer();
 		for (int i= start; i< start+length; i++)
 			text.append(ch[i]);
-//		text= text.substring(start, start+length);
 		//project-name
-		if (this.currObjectName.peek().equalsIgnoreCase("project-name"))
+		if (this.currObjectName.peek().equals(ExmaraldaXML.ELEMENT_PROJECT_NAME))
 		{
 			this.getBasicTranscription().getMetaInformation().setProjectName(text.toString());
 		}
 		//transcription-name
-		else if (this.currObjectName.peek().equalsIgnoreCase("transcription-name"))
+		else if (this.currObjectName.peek().equals(ExmaraldaXML.ELEMENT_TRANSCRIPTION_NAME))
 		{
 			this.getBasicTranscription().getMetaInformation().setTranscriptionName(text.toString());
 		}
-		//referenced-file
-		else if (this.currObjectName.peek().equalsIgnoreCase("referenced-file"))
-		{
-			try {
-				this.getBasicTranscription().getMetaInformation().setReferencedFile(new URL(text.toString()));
-			} catch (MalformedURLException e) {
-				throw new SAXException("Error in file, expected was an uri conform String, given is: "+text+".", e);
-			}
-		}
+		
 		//comment
 		else if (this.currObjectName.peek().equalsIgnoreCase("comment"))
 		{
@@ -204,11 +195,25 @@ public class EXBReader extends DefaultHandler2
 			this.getBasicTranscription().setMetaInformation(mInfo);
 		}
 		//project-name
-		else if (qName.equalsIgnoreCase("project-name"));
+		else if (qName.equalsIgnoreCase(ExmaraldaXML.ELEMENT_PROJECT_NAME));
 		//transcription-name
-		else if (qName.equalsIgnoreCase("transcription-name"));
+		else if (qName.equalsIgnoreCase(ExmaraldaXML.ELEMENT_TRANSCRIPTION_NAME));
 		//referenced-file
-		else if (qName.equalsIgnoreCase("referenced-file"));
+		else if (qName.equals(ExmaraldaXML.ELEMENT_REFERENCED_FILE))
+		{
+			String attValue= attributes.getValue(ExmaraldaXML.ATT_URL);
+			if (	(attValue!= null)&&
+					(!attValue.isEmpty()))
+			{
+				
+				try {
+					File refFile= new File(this.getExmaraldaFile().getParentFile()+"/"+attValue);
+					this.getBasicTranscription().getMetaInformation().setReferencedFile(refFile.toURI().toURL());
+				} catch (MalformedURLException e) {
+					throw new SAXException("Error in file, expected was an uri conform String, given is: "+attValue+".", e);
+				}
+			}
+		}
 		//comment
 		else if (qName.equalsIgnoreCase("comment"));
 		//transcription-conversion
