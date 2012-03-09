@@ -21,6 +21,7 @@ import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.EVENT_MEDIUM;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI;
+import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.UDInformation;
 
 import java.net.URL;
@@ -39,6 +40,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -54,6 +56,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.EventImpl#getMedium <em>Medium</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.EventImpl#getUrl <em>Url</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.EventImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.EventImpl#getTier <em>Tier</em>}</li>
  * </ul>
  * </p>
  *
@@ -220,11 +223,33 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setStart(TLI newStart) {
+	public NotificationChain basicSetStart(TLI newStart, NotificationChain msgs) {
 		TLI oldStart = start;
 		start = newStart;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__START, oldStart, start));
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__START, oldStart, newStart);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStart(TLI newStart) {
+		if (newStart != start) {
+			NotificationChain msgs = null;
+			if (start != null)
+				msgs = ((InternalEObject)start).eInverseRemove(this, ExmaraldaBasicPackage.TLI__STARTING_EVENTS, TLI.class, msgs);
+			if (newStart != null)
+				msgs = ((InternalEObject)newStart).eInverseAdd(this, ExmaraldaBasicPackage.TLI__STARTING_EVENTS, TLI.class, msgs);
+			msgs = basicSetStart(newStart, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__START, newStart, newStart));
 	}
 
 	/**
@@ -258,11 +283,33 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnd(TLI newEnd) {
+	public NotificationChain basicSetEnd(TLI newEnd, NotificationChain msgs) {
 		TLI oldEnd = end;
 		end = newEnd;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__END, oldEnd, end));
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__END, oldEnd, newEnd);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setEnd(TLI newEnd) {
+		if (newEnd != end) {
+			NotificationChain msgs = null;
+			if (end != null)
+				msgs = ((InternalEObject)end).eInverseRemove(this, ExmaraldaBasicPackage.TLI__ENDING_EVENTS, TLI.class, msgs);
+			if (newEnd != null)
+				msgs = ((InternalEObject)newEnd).eInverseAdd(this, ExmaraldaBasicPackage.TLI__ENDING_EVENTS, TLI.class, msgs);
+			msgs = basicSetEnd(newEnd, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__END, newEnd, newEnd));
 	}
 
 	/**
@@ -358,13 +405,98 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Tier getTier() {
+		if (eContainerFeatureID() != ExmaraldaBasicPackage.EVENT__TIER) return null;
+		return (Tier)eContainer();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetTier(Tier newTier, NotificationChain msgs) {
+		msgs = eBasicSetContainer((InternalEObject)newTier, ExmaraldaBasicPackage.EVENT__TIER, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTier(Tier newTier) {
+		if (newTier != eInternalContainer() || (eContainerFeatureID() != ExmaraldaBasicPackage.EVENT__TIER && newTier != null)) {
+			if (EcoreUtil.isAncestor(this, newTier))
+				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+			NotificationChain msgs = null;
+			if (eInternalContainer() != null)
+				msgs = eBasicRemoveFromContainer(msgs);
+			if (newTier != null)
+				msgs = ((InternalEObject)newTier).eInverseAdd(this, ExmaraldaBasicPackage.TIER__EVENTS, Tier.class, msgs);
+			msgs = basicSetTier(newTier, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__TIER, newTier, newTier));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ExmaraldaBasicPackage.EVENT__START:
+				if (start != null)
+					msgs = ((InternalEObject)start).eInverseRemove(this, ExmaraldaBasicPackage.TLI__STARTING_EVENTS, TLI.class, msgs);
+				return basicSetStart((TLI)otherEnd, msgs);
+			case ExmaraldaBasicPackage.EVENT__END:
+				if (end != null)
+					msgs = ((InternalEObject)end).eInverseRemove(this, ExmaraldaBasicPackage.TLI__ENDING_EVENTS, TLI.class, msgs);
+				return basicSetEnd((TLI)otherEnd, msgs);
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				if (eInternalContainer() != null)
+					msgs = eBasicRemoveFromContainer(msgs);
+				return basicSetTier((Tier)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case ExmaraldaBasicPackage.EVENT__UD_INFORMATIONS:
 				return ((InternalEList<?>)getUdInformations()).basicRemove(otherEnd, msgs);
+			case ExmaraldaBasicPackage.EVENT__START:
+				return basicSetStart(null, msgs);
+			case ExmaraldaBasicPackage.EVENT__END:
+				return basicSetEnd(null, msgs);
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				return basicSetTier(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
+		switch (eContainerFeatureID()) {
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				return eInternalContainer().eInverseRemove(this, ExmaraldaBasicPackage.TIER__EVENTS, Tier.class, msgs);
+		}
+		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
@@ -389,6 +521,8 @@ public class EventImpl extends EObjectImpl implements Event {
 				return getUrl();
 			case ExmaraldaBasicPackage.EVENT__VALUE:
 				return getValue();
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				return getTier();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -421,6 +555,9 @@ public class EventImpl extends EObjectImpl implements Event {
 			case ExmaraldaBasicPackage.EVENT__VALUE:
 				setValue((String)newValue);
 				return;
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				setTier((Tier)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -451,6 +588,9 @@ public class EventImpl extends EObjectImpl implements Event {
 			case ExmaraldaBasicPackage.EVENT__VALUE:
 				setValue(VALUE_EDEFAULT);
 				return;
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				setTier((Tier)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -475,6 +615,8 @@ public class EventImpl extends EObjectImpl implements Event {
 				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
 			case ExmaraldaBasicPackage.EVENT__VALUE:
 				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case ExmaraldaBasicPackage.EVENT__TIER:
+				return getTier() != null;
 		}
 		return super.eIsSet(featureID);
 	}

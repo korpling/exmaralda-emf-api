@@ -46,7 +46,6 @@ public class ExmaraldaBasicTests extends TestSuite {
 	 */
 	public static Test suite() {
 		TestSuite suite = new ExmaraldaBasicTests("exmaralda Tests");
-		suite.addTestSuite(BasicTranscriptionTest.class);
 		return suite;
 	}
 

@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event;
@@ -289,7 +290,7 @@ public class TierImpl extends EObjectImpl implements Tier {
 	 */
 	public EList<Event> getEvents() {
 		if (events == null) {
-			events = new EObjectContainmentEList<Event>(Event.class, this, ExmaraldaBasicPackage.TIER__EVENTS);
+			events = new EObjectContainmentWithInverseEList<Event>(Event.class, this, ExmaraldaBasicPackage.TIER__EVENTS, ExmaraldaBasicPackage.EVENT__TIER);
 		}
 		return events;
 	}
@@ -363,6 +364,21 @@ public class TierImpl extends EObjectImpl implements Tier {
 			udTierInformations = new EObjectContainmentEList<UDInformation>(UDInformation.class, this, ExmaraldaBasicPackage.TIER__UD_TIER_INFORMATIONS);
 		}
 		return udTierInformations;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ExmaraldaBasicPackage.TIER__EVENTS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getEvents()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**

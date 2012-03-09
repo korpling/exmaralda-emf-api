@@ -17,6 +17,7 @@
  */
 package de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -30,6 +31,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getTime <em>Time</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getType <em>Type</em>}</li>
  *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getId <em>Id</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getStartingEvents <em>Starting Events</em>}</li>
+ *   <li>{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI#getEndingEvents <em>Ending Events</em>}</li>
  * </ul>
  * </p>
  *
@@ -146,5 +149,41 @@ public interface TLI extends EObject {
 	 * @generated
 	 */
 	void setId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Starting Events</b></em>' reference list.
+	 * The list contents are of type {@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event}.
+	 * It is bidirectional and its opposite is '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getStart <em>Start</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Starting Events</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Starting Events</em>' reference list.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTLI_StartingEvents()
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getStart
+	 * @model opposite="start"
+	 * @generated
+	 */
+	EList<Event> getStartingEvents();
+
+	/**
+	 * Returns the value of the '<em><b>Ending Events</b></em>' reference list.
+	 * The list contents are of type {@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event}.
+	 * It is bidirectional and its opposite is '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getEnd <em>End</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Ending Events</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Ending Events</em>' reference list.
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getTLI_EndingEvents()
+	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getEnd
+	 * @model opposite="end"
+	 * @generated
+	 */
+	EList<Event> getEndingEvents();
 
 } // TLI

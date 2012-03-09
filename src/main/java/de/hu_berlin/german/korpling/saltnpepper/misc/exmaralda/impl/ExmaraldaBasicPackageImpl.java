@@ -570,6 +570,15 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getEvent_Tier() {
+		return (EReference)eventEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTLI() {
 		return tliEClass;
 	}
@@ -599,6 +608,24 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 	 */
 	public EAttribute getTLI_Id() {
 		return (EAttribute)tliEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTLI_StartingEvents() {
+		return (EReference)tliEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getTLI_EndingEvents() {
+		return (EReference)tliEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -721,11 +748,14 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		createEAttribute(eventEClass, EVENT__MEDIUM);
 		createEAttribute(eventEClass, EVENT__URL);
 		createEAttribute(eventEClass, EVENT__VALUE);
+		createEReference(eventEClass, EVENT__TIER);
 
 		tliEClass = createEClass(TLI);
 		createEAttribute(tliEClass, TLI__TIME);
 		createEAttribute(tliEClass, TLI__TYPE);
 		createEAttribute(tliEClass, TLI__ID);
+		createEReference(tliEClass, TLI__STARTING_EVENTS);
+		createEReference(tliEClass, TLI__ENDING_EVENTS);
 
 		// Create enums
 		speakeR_SEXEEnum = createEEnum(SPEAKER_SEX);
@@ -773,9 +803,6 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		initEReference(getBasicTranscription_Speakertable(), this.getSpeaker(), null, "speakertable", null, 0, -1, BasicTranscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBasicTranscription_Tiers(), this.getTier(), null, "tiers", null, 0, -1, BasicTranscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		EOperation op = addEOperation(basicTranscriptionEClass, this.getEvent(), "getEventsByTLI", 0, -1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getTLI(), "tli", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		initEClass(metaInformationEClass, MetaInformation.class, "MetaInformation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMetaInformation_ProjectName(), ecorePackage.getEString(), "projectName", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMetaInformation_TranscriptionName(), ecorePackage.getEString(), "transcriptionName", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -805,23 +832,26 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		initEAttribute(getTier_Category(), ecorePackage.getEString(), "category", null, 0, 1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTier_DisplayName(), ecorePackage.getEString(), "displayName", null, 0, 1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTier_Type(), this.getTIER_TYPE(), "type", null, 0, 1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getTier_Events(), this.getEvent(), null, "events", null, 0, -1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTier_Events(), this.getEvent(), this.getEvent_Tier(), "events", null, 0, -1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTier_Id(), ecorePackage.getEString(), "id", null, 0, 1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTier_Speaker(), this.getSpeaker(), null, "speaker", null, 0, 1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTier_UdTierInformations(), this.getUDInformation(), null, "udTierInformations", null, 0, -1, Tier.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(eventEClass, Event.class, "Event", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getEvent_UdInformations(), this.getUDInformation(), null, "udInformations", null, 0, -1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEvent_Start(), this.getTLI(), null, "start", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEvent_End(), this.getTLI(), null, "end", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEvent_Start(), this.getTLI(), this.getTLI_StartingEvents(), "start", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEvent_End(), this.getTLI(), this.getTLI_EndingEvents(), "end", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Medium(), this.getEVENT_MEDIUM(), "medium", "", 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Url(), this.getURL(), "url", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Value(), ecorePackage.getEString(), "value", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEvent_Tier(), this.getTier(), this.getTier_Events(), "tier", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(tliEClass, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI.class, "TLI", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTLI_Time(), ecorePackage.getEString(), "time", null, 0, 1, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTLI_Type(), this.getTIME_TYPE(), "type", "", 0, 1, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTLI_Id(), ecorePackage.getEString(), "id", null, 0, 1, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTLI_StartingEvents(), this.getEvent(), this.getEvent_Start(), "startingEvents", null, 0, -1, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTLI_EndingEvents(), this.getEvent(), this.getEvent_End(), "endingEvents", null, 0, -1, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.TLI.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(speakeR_SEXEEnum, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.SPEAKER_SEX.class, "SPEAKER_SEX");

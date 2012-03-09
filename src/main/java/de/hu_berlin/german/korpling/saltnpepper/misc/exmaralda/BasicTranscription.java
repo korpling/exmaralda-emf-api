@@ -125,14 +125,4 @@ public interface BasicTranscription extends EObject {
 	 */
 	EList<Tier> getTiers();
 
-	/**
-	 * Returns all {@link Event} objects being connected with the given {@link TLI} object. No matter, if {@link TLI} object
-	 * is the start or the end.
-	 * @param tli object to which returned objects are connected
-	 * @return a list of all {@link Event} objects being connected with the {@link TLI} object
-	 * @model
-	 * @generated
-	 */
-	EList<Event> getEventsByTLI(TLI tli);
-
 } // BasicTranscription

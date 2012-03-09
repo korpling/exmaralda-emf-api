@@ -24,11 +24,9 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-import org.eclipse.emf.ecore.util.EContentAdapter;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -159,82 +157,6 @@ public class BasicTranscriptionImpl extends EObjectImpl implements BasicTranscri
 		}
 		else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.BASIC_TRANSCRIPTION__COMMON_TIME_LINE, newCommonTimeLine, newCommonTimeLine));
-	}
-
-	/**
-	 * This method must be implemented and return true, if this object shall be notified, when adding objects into contained
-	 * lists (Containment relation).
-	 * @return returns always <code>true</code>
-	 */
-	@Override
-	public boolean eNotificationRequired() {
-		return true;
-	}
-	
-	/**
-	 * This method is invoked by the EMF framework, when something has changed in a list being contained by
-	 * this object.
-	 * Listens to when a new {@link Tier} object is added.
-	 */
-	@Override
-	public void eNotify(Notification notification) 
-	{
-		super.eNotify(notification);		
-		
-		if (notification.getFeature() instanceof EReference) 
-		{
-			EReference ref = (EReference) notification.getFeature();
-			if(ref.equals(ExmaraldaBasicPackage.Literals.BASIC_TRANSCRIPTION__TIERS)) 
-			{
-				Object newValue= notification.getNewValue();
-				switch (notification.getEventType()) 
-				{
-					case Notification.ADD:
-					{
-						if (newValue instanceof Tier)
-						{
-							((Tier) newValue).eAdapters().add(adapter);
-						}
-						break;
-					}
-				}
-			}
-		}
-	}
-	
-	/**
-	 * Adapter object to react on changes in {@link Tier} objects being contained by this object. 
-	 */
-	private BasicTranscriptionAdapter adapter= new BasicTranscriptionAdapter();
-	/**
-	 * An adapter class listening to changes in {@link Tier} object, for instance, when an {@link Event} is added. 
-	 *  
-	 * @author Florian Zipser
-	 *
-	 */
-	private class BasicTranscriptionAdapter extends EContentAdapter
-	{
-		public void notifyChanged(Notification notification) 
-		{
-			System.out.println("CHANGED: "+ notification);
-			switch (notification.getEventType()) {
-			case Notification.ADD:
-				if (notification.getNewValue() instanceof Event)
-				{
-					Event event= (Event) notification.getNewValue();
-					if (event.getStart()!= null)
-					{
-						EList<Event> events= tli2Events.get(event.getStart());
-					}	
-					//start: start value of tli
-//					tli2Events.put(key, value)
-					notification.getNewValue();
-					System.out.println("-----------------> HELLO TIER added");
-				}
-				break;
-			}
-			
-		}
 	}
 	
 	/**
