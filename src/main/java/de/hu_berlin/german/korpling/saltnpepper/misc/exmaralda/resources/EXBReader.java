@@ -130,7 +130,6 @@ public class EXBReader extends DefaultHandler2
 				this.currSpeaker.setAbbreviation(text.toString());
 			else this.currSpeaker.setAbbreviation(this.currSpeaker.getAbbreviation() +text);
 		}
-		//TODO stuff for languages
 		//comment
 		else if (this.currObjectName.peek().equalsIgnoreCase("comment"))
 		{
@@ -225,6 +224,25 @@ public class EXBReader extends DefaultHandler2
 			speaker.setId(attributes.getValue("id"));
 			this.currSpeaker= speaker;
 			this.getBasicTranscription().getSpeakertable().add(speaker);
+		}
+		else if (	(ExmaraldaXML.ELEMENT_LANGUAGE.equals(qName)) &&
+					(attributes.getValue(ExmaraldaXML.ATT_LANG)!= null))
+		{
+			if (ExmaraldaXML.ELEMENT_LANGUAGE_USED.equals(this.currObjectName.peek()))
+			{
+				if (this.currSpeaker!= null)
+					this.currSpeaker.getLanguageUsed().add(attributes.getValue(ExmaraldaXML.ATT_LANG));
+			}
+			else if (ExmaraldaXML.ELEMENT_L1.equals(this.currObjectName.peek()))
+			{
+				if (this.currSpeaker!= null)
+					this.currSpeaker.getL1().add(attributes.getValue(ExmaraldaXML.ATT_LANG));
+			}
+			else if (ExmaraldaXML.ELEMENT_L2.equals(this.currObjectName.peek()))
+			{
+				if (this.currSpeaker!= null)
+					this.currSpeaker.getL2().add(attributes.getValue(ExmaraldaXML.ATT_LANG));
+			}
 		}
 		//sex
 		else if (qName.equalsIgnoreCase("sex"))
