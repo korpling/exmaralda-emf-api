@@ -42,7 +42,7 @@ import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Tier;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.UDInformation;
 import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.exceptions.ExmaraldaException;
 
-public class EXBReader extends DefaultHandler2 
+public class EXBReader extends DefaultHandler2 implements ExmaraldaXML
 {
 	public EXBReader()
 	{
@@ -99,53 +99,58 @@ public class EXBReader extends DefaultHandler2
 		for (int i= start; i< start+length; i++)
 			text.append(ch[i]);
 		//project-name
-		if (this.currObjectName.peek().equals(ExmaraldaXML.ELEMENT_PROJECT_NAME))
+		if (ELEMENT_PROJECT_NAME.equals(this.currObjectName.peek()))
 		{
 			this.getBasicTranscription().getMetaInformation().setProjectName(text.toString());
 		}
 		//transcription-name
-		else if (this.currObjectName.peek().equals(ExmaraldaXML.ELEMENT_TRANSCRIPTION_NAME))
+		else if (ELEMENT_TRANSCRIPTION_NAME.equals(this.currObjectName.peek()))
 		{
 			this.getBasicTranscription().getMetaInformation().setTranscriptionName(text.toString());
 		}
 		
 		//comment
-		else if (this.currObjectName.peek().equalsIgnoreCase("comment"))
+		else if (ELEMENT_COMMENT.equals(this.currObjectName.peek()))
 		{
-			if (getBasicTranscription().getMetaInformation().getComment()== null)
-				getBasicTranscription().getMetaInformation().setComment(text.toString());
-			else getBasicTranscription().getMetaInformation().setComment(getBasicTranscription().getMetaInformation().getComment() +text);
+			this.currObjectName.pop();
+			
+			if (ELEMENT_META_INFORMATION.equals(this.currObjectName.peek()))
+			{//meta-information/comment
+				if (getBasicTranscription().getMetaInformation().getComment()== null)
+					getBasicTranscription().getMetaInformation().setComment(text.toString());
+				else getBasicTranscription().getMetaInformation().setComment(getBasicTranscription().getMetaInformation().getComment() +text);
+			}//meta-information/comment
+			else if (ELEMENT_SPEAKER.equals(this.currObjectName.peek()))
+			{//speaker/comment
+				if (this.currSpeaker.getComment()== null)
+					this.currSpeaker.setComment(text.toString());
+				else this.currSpeaker.setComment(this.currSpeaker.getComment() +text);
+			}//speaker/comment
+			this.currObjectName.push(ELEMENT_COMMENT);
 		}
 		//transcription-conversion
-		else if (this.currObjectName.peek().equalsIgnoreCase("transcription-conversion"))
+		else if (ELEMENT_TRANSCRIPTION_CONVENTION.equals(this.currObjectName.peek()))
 		{
 			if (getBasicTranscription().getMetaInformation().getTranscriptionConvention()== null)
 				getBasicTranscription().getMetaInformation().setTranscriptionConvention(text.toString());
 			else getBasicTranscription().getMetaInformation().setTranscriptionConvention(getBasicTranscription().getMetaInformation().getTranscriptionConvention() +text);
 		}
 		//abbreviation
-		else if (this.currObjectName.peek().equalsIgnoreCase("abbreviation"))
+		else if (ELEMENT_ABBREVIATION.equals(this.currObjectName.peek()))
 		{
 			if (this.currSpeaker.getAbbreviation()== null)
 				this.currSpeaker.setAbbreviation(text.toString());
 			else this.currSpeaker.setAbbreviation(this.currSpeaker.getAbbreviation() +text);
 		}
-		//comment
-		else if (this.currObjectName.peek().equalsIgnoreCase("comment"))
-		{
-			if (this.currSpeaker.getComment()== null)
-				this.currSpeaker.setComment(text.toString());
-			else this.currSpeaker.setComment(this.currSpeaker.getComment() +text);
-		}
 		//event
-		else if (this.currObjectName.peek().equalsIgnoreCase("event"))
+		else if (ELEMENT_EVENT.equals(this.currObjectName.peek()))
 		{
 			if (this.currEvent.getValue()== null)
 				this.currEvent.setValue(text.toString());
 			else this.currEvent.setValue(this.currEvent.getValue() +text);
 		}
 		//ud-information
-		else if(this.currObjectName.peek().equalsIgnoreCase("ud-information"))
+		else if(ELEMENT_UD_INFO.equals(this.currObjectName.peek()))
 		{
 			if (this.currUDInfo.getValue()== null)
 				this.currUDInfo.setValue(text.toString());
@@ -184,23 +189,23 @@ public class EXBReader extends DefaultHandler2
             					Attributes attributes) throws SAXException
     {
 		//basic-Transcription
-		if (qName.equalsIgnoreCase("basic-transcription"));
+		if (ELEMENT_BASIC_TRANS.equals(qName));
 		//head
-		else if (qName.equalsIgnoreCase("head"));
+		else if (ELEMENT_HEAD.equals(qName));
 		//meta-information
-		else if (qName.equalsIgnoreCase("meta-information"))
+		else if (ELEMENT_META_INFORMATION.equals(qName))
 		{
 			MetaInformation mInfo= ExmaraldaBasicFactory.eINSTANCE.createMetaInformation();
 			this.getBasicTranscription().setMetaInformation(mInfo);
 		}
 		//project-name
-		else if (qName.equalsIgnoreCase(ExmaraldaXML.ELEMENT_PROJECT_NAME));
+		else if (ELEMENT_PROJECT_NAME.equals(qName));
 		//transcription-name
-		else if (qName.equalsIgnoreCase(ExmaraldaXML.ELEMENT_TRANSCRIPTION_NAME));
+		else if (ELEMENT_TRANSCRIPTION_NAME.equals(qName));
 		//referenced-file
-		else if (qName.equals(ExmaraldaXML.ELEMENT_REFERENCED_FILE))
+		else if (ELEMENT_REFERENCED_FILE.equals(qName))
 		{
-			String attValue= attributes.getValue(ExmaraldaXML.ATT_URL);
+			String attValue= attributes.getValue(ATT_URL);
 			if (	(attValue!= null)&&
 					(!attValue.isEmpty()))
 			{
@@ -214,40 +219,40 @@ public class EXBReader extends DefaultHandler2
 			}
 		}
 		//comment
-		else if (qName.equalsIgnoreCase("comment"));
+		else if (ELEMENT_COMMENT.equals(qName));
 		//transcription-conversion
-		else if (qName.equalsIgnoreCase("transcription-conversion"));
+		else if (ELEMENT_TRANSCRIPTION_CONVENTION.equals(qName));
 		//speaker
-		else if (qName.equalsIgnoreCase("speaker"))
+		else if (ELEMENT_SPEAKER.equals(qName))
 		{
 			Speaker speaker= ExmaraldaBasicFactory.eINSTANCE.createSpeaker();
-			speaker.setId(attributes.getValue("id"));
+			speaker.setId(attributes.getValue(ATT_ID));
 			this.currSpeaker= speaker;
 			this.getBasicTranscription().getSpeakertable().add(speaker);
 		}
-		else if (	(ExmaraldaXML.ELEMENT_LANGUAGE.equals(qName)) &&
-					(attributes.getValue(ExmaraldaXML.ATT_LANG)!= null))
+		else if (	(ELEMENT_LANGUAGE.equals(qName)) &&
+					(attributes.getValue(ATT_LANG)!= null))
 		{
-			if (ExmaraldaXML.ELEMENT_LANGUAGE_USED.equals(this.currObjectName.peek()))
+			if (ELEMENT_LANGUAGE_USED.equals(this.currObjectName.peek()))
 			{
 				if (this.currSpeaker!= null)
-					this.currSpeaker.getLanguageUsed().add(attributes.getValue(ExmaraldaXML.ATT_LANG));
+					this.currSpeaker.getLanguageUsed().add(attributes.getValue(ATT_LANG));
 			}
-			else if (ExmaraldaXML.ELEMENT_L1.equals(this.currObjectName.peek()))
+			else if (ELEMENT_L1.equals(this.currObjectName.peek()))
 			{
 				if (this.currSpeaker!= null)
-					this.currSpeaker.getL1().add(attributes.getValue(ExmaraldaXML.ATT_LANG));
+					this.currSpeaker.getL1().add(attributes.getValue(ATT_LANG));
 			}
-			else if (ExmaraldaXML.ELEMENT_L2.equals(this.currObjectName.peek()))
+			else if (ELEMENT_L2.equals(this.currObjectName.peek()))
 			{
 				if (this.currSpeaker!= null)
-					this.currSpeaker.getL2().add(attributes.getValue(ExmaraldaXML.ATT_LANG));
+					this.currSpeaker.getL2().add(attributes.getValue(ATT_LANG));
 			}
 		}
 		//sex
-		else if (qName.equalsIgnoreCase("sex"))
+		else if (ELEMENT_SEX.equals(qName))
 		{
-			String value= attributes.getValue("value");
+			String value= attributes.getValue(ATT_VALUE);
 			if (value.equalsIgnoreCase("m"))
 				this.currSpeaker.setSex(SPEAKER_SEX.M);
 			else if (value.equalsIgnoreCase("f"))
@@ -257,88 +262,88 @@ public class EXBReader extends DefaultHandler2
 		}
 		
 		//basic-body
-		else if (qName.equalsIgnoreCase("basic-body"));
+		else if (ELEMENT_BASIC_BODY.equals(qName));
 		//common-timeline
-		else if(qName.equalsIgnoreCase("common-timeline"))
+		else if(ELEMENT_COMMON_TIMELINE.equals(qName))
 		{
 			CommonTimeLine timeLine= ExmaraldaBasicFactory.eINSTANCE.createCommonTimeLine();
 			this.getBasicTranscription().setCommonTimeLine(timeLine);
 		}
 		//tli
-		else if(qName.equalsIgnoreCase("tli"))
+		else if(ELEMENT_TLI.equals(qName))
 		{
 			TLI tli= ExmaraldaBasicFactory.eINSTANCE.createTLI();
-			tli.setId(attributes.getValue("id"));
-			tli.setTime(attributes.getValue("time"));
-			if (attributes.getValue("type")!= null)
+			tli.setId(attributes.getValue(ATT_ID));
+			tli.setTime(attributes.getValue(ATT_TIME));
+			if (attributes.getValue(ATT_TYPE)!= null)
 			{	
-				if (attributes.getValue("type").equalsIgnoreCase("appl"))
+				if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("appl"))
 					tli.setType(TIME_TYPE.APPL);
-				else if (attributes.getValue("type").equalsIgnoreCase("intp"))
+				else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("intp"))
 					tli.setType(TIME_TYPE.INTP);
-				else if (attributes.getValue("type").equalsIgnoreCase("othr"))
+				else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("othr"))
 					tli.setType(TIME_TYPE.OTHR);
-				else if (attributes.getValue("type").equalsIgnoreCase("unsp"))
+				else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("unsp"))
 					tli.setType(TIME_TYPE.UNSP);
-				else if (attributes.getValue("type").equalsIgnoreCase("user"))
+				else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("user"))
 					tli.setType(TIME_TYPE.USER);
 			}
 			this.getBasicTranscription().getCommonTimeLine().getTLIs().add(tli);
 		}
 		//tier
-		else if(qName.equalsIgnoreCase("tier"))
+		else if(ELEMENT_TIER.equals(qName))
 		{
 			Tier tier= ExmaraldaBasicFactory.eINSTANCE.createTier();
 			this.currTier= tier;
-			tier.setId(attributes.getValue("id"));
+			tier.setId(attributes.getValue(ATT_ID));
 			for (Speaker speaker: this.getBasicTranscription().getSpeakertable())
 			{
-				if (speaker.getId().equalsIgnoreCase(attributes.getValue("speaker")))
+				if (speaker.getId().equalsIgnoreCase(attributes.getValue(ATT_SPEAKER)))
 					tier.setSpeaker(speaker);
 			}
-			tier.setCategory(attributes.getValue("category"));
-			tier.setDisplayName(attributes.getValue("display-name"));
+			tier.setCategory(attributes.getValue(ATT_CATEGORY));
+			tier.setDisplayName(attributes.getValue(ATT_DISPLAY_NAME));
 			if (tier.getCategory()== null)
 				throw new ExmaraldaException("Cannot read given exmaralda file '"+this.getExmaraldaFile()+"', because there is a <tier> element ('id=\""+tier.getId()+"\"') without a @category attribute.");;
-			if (attributes.getValue("type").equalsIgnoreCase("t"))
+			if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("t"))
 				tier.setType(TIER_TYPE.T);
-			else if (attributes.getValue("type").equalsIgnoreCase("d"))
+			else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("d"))
 				tier.setType(TIER_TYPE.D);
-			else if (attributes.getValue("type").equalsIgnoreCase("a"))
+			else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("a"))
 				tier.setType(TIER_TYPE.A);
-			else if (attributes.getValue("type").equalsIgnoreCase("l"))
+			else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("l"))
 				tier.setType(TIER_TYPE.L);
-			else if (attributes.getValue("type").equalsIgnoreCase("u"))
+			else if (attributes.getValue(ATT_TYPE).equalsIgnoreCase("u"))
 				tier.setType(TIER_TYPE.U);
 			this.getBasicTranscription().getTiers().add(tier);
 		}
 		//event
-		else if(qName.equalsIgnoreCase("event"))
+		else if(ELEMENT_EVENT.equals(qName))
 		{
 			Event event= ExmaraldaBasicFactory.eINSTANCE.createEvent();
 			this.currEvent= event;
 			//search for start and end time event
 			for (TLI tli: this.getBasicTranscription().getCommonTimeLine().getTLIs())
 			{
-				if (tli.getId().equalsIgnoreCase(attributes.getValue("start")))
+				if (tli.getId().equals(attributes.getValue(ATT_START)))
 					event.setStart(tli);
-				if (tli.getId().equalsIgnoreCase(attributes.getValue("end")))
+				if (tli.getId().equals(attributes.getValue(ATT_START)))
 					event.setEnd(tli);
 				//break if both are set
 				if ((event.getStart()!= null) && (event.getEnd()!= null))
 					break;
 			}	
-			if (attributes.getValue("medium")!= null)
+			if (attributes.getValue(ATT_MEDIUM)!= null)
 			{	
-				if (attributes.getValue("medium").equalsIgnoreCase("aud"))
+				if (attributes.getValue(ATT_MEDIUM).equalsIgnoreCase("aud"))
 					event.setMedium(EVENT_MEDIUM.AUD);
-				else if (attributes.getValue("medium").equalsIgnoreCase("vid"))
+				else if (attributes.getValue(ATT_MEDIUM).equalsIgnoreCase("vid"))
 					event.setMedium(EVENT_MEDIUM.VID);
-				else if (attributes.getValue("medium").equalsIgnoreCase("img"))
+				else if (attributes.getValue(ATT_MEDIUM).equalsIgnoreCase("img"))
 					event.setMedium(EVENT_MEDIUM.IMG);
-				else if (attributes.getValue("medium").equalsIgnoreCase("txt"))
+				else if (attributes.getValue(ATT_MEDIUM).equalsIgnoreCase("txt"))
 					event.setMedium(EVENT_MEDIUM.TXT);
-				else if (attributes.getValue("medium").equalsIgnoreCase("oth"))
+				else if (attributes.getValue(ATT_MEDIUM).equalsIgnoreCase("oth"))
 					event.setMedium(EVENT_MEDIUM.OTH);
 				else event.setMedium(null);
 			}
@@ -347,8 +352,8 @@ public class EXBReader extends DefaultHandler2
 				event.setMedium(null);
 			}
 			try {
-				if (attributes.getValue("url")!= null)
-					event.setUrl(new URL(attributes.getValue("url")));
+				if (attributes.getValue(ATT_URL)!= null)
+					event.setUrl(new URL(attributes.getValue(ATT_URL)));
 			} catch (MalformedURLException e) {
 				throw new SAXException("Cannot set the url, because it is not a valid url: "+attributes.getValue("url")+".", e);
 			}
@@ -358,24 +363,24 @@ public class EXBReader extends DefaultHandler2
 			this.currTier.getEvents().add(event);
 		}
 		//ud-information
-		else if(qName.equalsIgnoreCase("ud-information"))
+		else if(ELEMENT_UD_INFO.equals(qName))
 		{
 			UDInformation udInfo= ExmaraldaBasicFactory.eINSTANCE.createUDInformation();
-			udInfo.setAttributeName(attributes.getValue("attribute-name"));
+			udInfo.setAttributeName(attributes.getValue(ATT_ATTRIBUTE_NAME));
 			this.currUDInfo= udInfo;
 			//father is meta-information
-			if (this.currObjectName.peek().equalsIgnoreCase("ud-meta-information"))
+			if (ELEMENT_UD_META_INFO.equals(this.currObjectName.peek()))
 				this.getBasicTranscription().getMetaInformation().getUdMetaInformations().add(udInfo);
 			//father is speaker
-			else if (this.currObjectName.peek().equalsIgnoreCase("ud-speaker-information"))
+			else if (ELEMENT_UD_SPEAKER_INFO.equals(this.currObjectName.peek()))
 			{
 				this.currSpeaker.getUdSpeakerInformations().add(udInfo);
 			}
 			//father is tier
-			else if (this.currObjectName.peek().equalsIgnoreCase("ud-tier-information"))
+			else if (ELEMENT_UD_TIER_INFO.equals(this.currObjectName.peek()))
 				this.currTier.getUdTierInformations().add(udInfo);
 			//father is an event
-			else if (this.currObjectName.peek().equalsIgnoreCase("event"))
+			else if (ELEMENT_EVENT.equals(this.currObjectName.peek()))
 			{	
 				this.currEvent.getUdInformations().add(udInfo);
 			}
@@ -386,7 +391,7 @@ public class EXBReader extends DefaultHandler2
 	@Override
 	public void endElement(String namespaceURI, String localName, String qName) throws SAXException
 	{
-		if (!this.currObjectName.peek().equalsIgnoreCase(qName))
+		if (!this.currObjectName.peek().equals(qName))
 			throw new ExmaraldaException("The given file is not wellformed. Expected element is: "+this.currObjectName.peek() + ", but given is: "+qName);
 		this.currObjectName.pop();
 	}

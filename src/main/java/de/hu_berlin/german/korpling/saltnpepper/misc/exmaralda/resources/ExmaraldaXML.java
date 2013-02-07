@@ -48,6 +48,14 @@ public interface ExmaraldaXML
 	 */
 	public static final String ELEMENT_UD_META_INFO="ud-meta-information";
 	/**
+	 * Name of the xml element for user-defined information of speaker.
+	 */
+	public static final String ELEMENT_UD_SPEAKER_INFO="ud-speaker-information";
+	/**
+	 * Name of the xml element for user-defined information of tier.
+	 */
+	public static final String ELEMENT_UD_TIER_INFO="ud-tier-information";
+	/**
 	 * Name of the xml element containing user-defined inormationle.
 	 */
 	public static final String ELEMENT_UD_INFO="ud-information";
@@ -133,6 +141,14 @@ public interface ExmaraldaXML
 	 * Name of the xml attribute to store time.
 	 */
 	public static final String ATT_TIME="time";
+	/**
+	 * Name of the xml attribute to store value.
+	 */
+	public static final String ATT_VALUE="value";
+	/**
+	 * Name of the xml attribute to store medium.
+	 */
+	public static final String ATT_MEDIUM="medium";
 	/**
 	 * Name of the xml attribute to store id.
 	 */
