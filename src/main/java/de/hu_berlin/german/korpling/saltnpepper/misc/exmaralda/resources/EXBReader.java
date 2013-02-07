@@ -327,7 +327,7 @@ public class EXBReader extends DefaultHandler2 implements ExmaraldaXML
 			{
 				if (tli.getId().equals(attributes.getValue(ATT_START)))
 					event.setStart(tli);
-				if (tli.getId().equals(attributes.getValue(ATT_START)))
+				if (tli.getId().equals(attributes.getValue(ATT_END)))
 					event.setEnd(tli);
 				//break if both are set
 				if ((event.getStart()!= null) && (event.getEnd()!= null))
