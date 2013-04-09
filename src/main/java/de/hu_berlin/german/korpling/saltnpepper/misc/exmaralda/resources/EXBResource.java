@@ -65,7 +65,7 @@ public class EXBResource extends ResourceImpl
 		
 		File exmaraldaFile= new File(this.getURI().toFileString());
 		if (!exmaraldaFile.exists()) 
-			throw new ExmaraldaException("Cannot load resource, because the file does not exists: " + exmaraldaFile);
+			throw new ExmaraldaException("Cannot load resource, because the file does not exist: " + exmaraldaFile);
 		
 		if (!exmaraldaFile.canRead())
 			throw new ExmaraldaException("Cannot load resource, because the file can not be read: " + exmaraldaFile);
