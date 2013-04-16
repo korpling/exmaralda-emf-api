@@ -1,0 +1,14 @@
+***********************************************************************************
+***								CHANGELOG for exmaralda-api  					***
+***********************************************************************************
+*	groupId:		de.hu_berlin.german.korpling								  *
+*	artifactId:		exmaralda-api										          *
+*													                              *
+***********************************************************************************
+
+Version 1.1.4
+=============
+	*= enabled exmaralda-api to run under Eclipse juno even with SCR plugin in maven (carrot-garden)
+	*+ added handling of languages
+	*+ enhanced ExmaraldaXML class
+		
