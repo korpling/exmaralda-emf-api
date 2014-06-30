@@ -45,7 +45,7 @@ public class ExmaraldaBasicFactoryImpl extends EFactoryImpl implements Exmaralda
 	 */
 	public static ExmaraldaBasicFactory init() {
 		try {
-			ExmaraldaBasicFactory theExmaraldaBasicFactory = (ExmaraldaBasicFactory)EPackage.Registry.INSTANCE.getEFactory("exb"); 
+			ExmaraldaBasicFactory theExmaraldaBasicFactory = (ExmaraldaBasicFactory)EPackage.Registry.INSTANCE.getEFactory(ExmaraldaBasicPackage.eNS_URI);
 			if (theExmaraldaBasicFactory != null) {
 				return theExmaraldaBasicFactory;
 			}

@@ -18,6 +18,7 @@
     <assemblies.name>src/assemble/assemblies.xml</assemblies.name>
     <license.file>${basedir}/LICENSE</license.file>
     <notice.file>${basedir}/NOTICE</notice.file>
+    <emf.version>2.10.0-v20140514-1158</emf.version>
   </properties>
   <scm>
     <developerConnection>scm:svn:https://korpling.german.hu-berlin.de/svn/saltnpepper/models/exmaralda-api/trunk</developerConnection>
@@ -51,19 +52,19 @@
     <dependency>
       <groupId>org.eclipse.emf</groupId>
       <artifactId>org.eclipse.emf.common</artifactId>
-      <version>2.6.0.v20100614-1136</version>
+      <version>${emf.version}</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.emf</groupId>
       <artifactId>org.eclipse.emf.ecore</artifactId>
-      <version>2.6.0.v20100614-1136</version>
+      <version>${emf.version}</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.eclipse.emf</groupId>
       <artifactId>org.eclipse.emf.ecore.xmi</artifactId>
-      <version>2.5.0.v20100521-1846</version>
+      <version>${emf.version}</version>
       <type>jar</type>
       <scope>compile</scope>
     </dependency>

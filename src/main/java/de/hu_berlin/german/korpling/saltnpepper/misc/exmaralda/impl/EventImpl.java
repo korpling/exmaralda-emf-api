@@ -407,7 +407,7 @@ public class EventImpl extends EObjectImpl implements Event {
 	 */
 	public Tier getTier() {
 		if (eContainerFeatureID() != ExmaraldaBasicPackage.EVENT__TIER) return null;
-		return (Tier)eContainer();
+		return (Tier)eInternalContainer();
 	}
 
 	/**
