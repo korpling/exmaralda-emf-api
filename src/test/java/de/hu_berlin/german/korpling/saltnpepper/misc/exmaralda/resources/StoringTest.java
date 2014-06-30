@@ -72,7 +72,7 @@ public class StoringTest extends TestCase
 	{
 		String inputFile= "./src/test/resources/testCases/case1/expected/document1.exb";
 		String expectedFile= "./src/test/resources/testCases/case1/expected/document1.exb";
-		String outputFile= "./_TMP/case1/document1.exb";
+		String outputFile= System.getProperty("java.io.tmpdir")+"/case1/document1.exb";
 		
 		this.loadSaveCompare(inputFile, outputFile, expectedFile);
 	}
@@ -81,7 +81,8 @@ public class StoringTest extends TestCase
 	{
 		String inputFile= "./src/test/resources/testCases/case2/expected/document1.exb";
 		String expectedFile= "./src/test/resources/testCases/case2/expected/document1.exb";
-		String outputFile= "./_TMP/case2/document1.exb";
+		String outputFile= System.getProperty("java.io.tmpdir")+"/case2/document1.exb";
+		
 		
 		this.loadSaveCompare(inputFile, outputFile, expectedFile);
 	}
@@ -90,7 +91,7 @@ public class StoringTest extends TestCase
 	{
 		String inputFile= "./src/test/resources/testCases/case3/expected/document1.exb";
 		String expectedFile= "./src/test/resources/testCases/case3/expected/document1.exb";
-		String outputFile= "./_TMP/case3/document1.exb";
+		String outputFile= System.getProperty("java.io.tmpdir")+"/case3/document1.exb";
 		
 		this.loadSaveCompare(inputFile, outputFile, expectedFile);
 	}
@@ -99,7 +100,7 @@ public class StoringTest extends TestCase
 	{
 		String inputFile= "./src/test/resources/testCases/case4/expected/document1.exb";
 		String expectedFile= "./src/test/resources/testCases/case4/expected/document1.exb";
-		String outputFile= "./_TMP/case4/document1.exb";
+		String outputFile= System.getProperty("java.io.tmpdir")+"/case4/document1.exb";
 		
 		this.loadSaveCompare(inputFile, outputFile, expectedFile);
 	}
