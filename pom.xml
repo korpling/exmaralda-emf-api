@@ -21,7 +21,9 @@
     <emf.version>2.10.0-v20140514-1158</emf.version>
   </properties>
   <scm>
-    <developerConnection>scm:git:https://github.com/korpling/exmaralda-emf-api.git</developerConnection>
+  	<connection>scm:git:git://github.com/github.com:korpling/exmaralda-emf-api.git</connection>
+    <developerConnection>scm:git:git@github.com:korpling/exmaralda-emf-api.git</developerConnection>
+    <url>https://github.com/korpling/exmaralda-emf-api</url>
   </scm>
   <repositories>
     <repository>
