@@ -167,16 +167,17 @@
         </configuration>
       </plugin>
        <!-- start: Plugin for automatic releasing -->
-      <plugin>
+       <plugin>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>
-          <tagBase>
-           https://korpling.german.hu-berlin.de/svn/saltnpepper/models/exmaralda-api/tags/
-          </tagBase>
-          <releaseProfiles>release</releaseProfiles>
-          <goals>package assembly:single deploy</goals>
-        </configuration>
+        <version>2.2.1</version>
+        <executions>
+			<execution>
+				<id>default</id>
+				<goals>
+				<goal>perform</goal>
+				</goals>
+			</execution>
+		</executions>
       </plugin>
       <!-- start: creation of bundle jar -->
     </plugins>
