@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ====
     Copyright 2009 Humboldt University of Berlin, INRIA.
 
@@ -20,6 +21,9 @@
 =======
 Apache License
 >>>>>>> origin/master
+=======
+Apache License
+>>>>>>> 411878dee2ff4e840b48814b49fd2232b76f1640
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
@@ -200,10 +204,14 @@ Apache License
 
       To apply the Apache License to your work, attach the following
 <<<<<<< HEAD
+<<<<<<< HEAD
       boilerplate notice, with the fields enclosed by brackets "[]"
 =======
       boilerplate notice, with the fields enclosed by brackets "{}"
 >>>>>>> origin/master
+=======
+      boilerplate notice, with the fields enclosed by brackets "{}"
+>>>>>>> 411878dee2ff4e840b48814b49fd2232b76f1640
       replaced with your own identifying information. (Don't include
       the brackets!)  The text should be enclosed in the appropriate
       comment syntax for the file format. We also recommend that a
@@ -212,10 +220,14 @@ Apache License
       identification within third-party archives.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    Copyright 2009 Humboldt University of Berlin, INRIA 
 =======
    Copyright {yyyy} {name of copyright owner}
 >>>>>>> origin/master
+=======
+   Copyright {yyyy} {name of copyright owner}
+>>>>>>> 411878dee2ff4e840b48814b49fd2232b76f1640
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -228,8 +240,12 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
 <<<<<<< HEAD
+<<<<<<< HEAD
    limitations under the License.
 
 =======
    limitations under the License.
 >>>>>>> origin/master
+=======
+   limitations under the License.
+>>>>>>> 411878dee2ff4e840b48814b49fd2232b76f1640
