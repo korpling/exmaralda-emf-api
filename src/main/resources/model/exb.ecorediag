@@ -52,13 +52,6 @@
     <element xmi:type="ecore:EClass" href="exb.ecore#//MetaInformation"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WG8fsplOEd6mosHo_8YOEg" x="720" y="245" width="208" height="188"/>
   </children>
-  <children xmi:type="notation:Node" xmi:id="_ZD9DYJlOEd6mosHo_8YOEg" type="1004">
-    <children xmi:type="notation:Node" xmi:id="_ZEDKAJlOEd6mosHo_8YOEg" type="4008"/>
-    <children xmi:type="notation:Node" xmi:id="_ZEDKAZlOEd6mosHo_8YOEg" type="4009"/>
-    <styles xmi:type="notation:ShapeStyle" xmi:id="_ZD9DYZlOEd6mosHo_8YOEg" fontColor="4210752" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EDataType" href="exb.ecore#//URL"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZD9DYplOEd6mosHo_8YOEg" x="-300" y="620" width="152" height="36"/>
-  </children>
   <children xmi:type="notation:Node" xmi:id="_bYXWAJlOEd6mosHo_8YOEg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_bYXWA5lOEd6mosHo_8YOEg" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_bYXWBJlOEd6mosHo_8YOEg" type="5001">

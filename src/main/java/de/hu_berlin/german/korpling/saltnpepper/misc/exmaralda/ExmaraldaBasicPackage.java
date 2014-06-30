@@ -625,17 +625,6 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	int EVENT_MEDIUM = 11;
 
 	/**
-	 * The meta object id for the '<em>URL</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see java.net.URL
-	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.ExmaraldaBasicPackageImpl#getURL()
-	 * @generated
-	 */
-	int URL = 12;
-
-
-	/**
 	 * Returns the meta object for class '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.BasicTranscription <em>Basic Transcription</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1196,17 +1185,6 @@ public interface ExmaraldaBasicPackage extends EPackage {
 	EEnum getEVENT_MEDIUM();
 
 	/**
-	 * Returns the meta object for data type '{@link java.net.URL <em>URL</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>URL</em>'.
-	 * @see java.net.URL
-	 * @model instanceClass="java.net.URL"
-	 * @generated
-	 */
-	EDataType getURL();
-
-	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1667,16 +1645,6 @@ public interface ExmaraldaBasicPackage extends EPackage {
 		 * @generated
 		 */
 		EEnum EVENT_MEDIUM = eINSTANCE.getEVENT_MEDIUM();
-
-		/**
-		 * The meta object literal for the '<em>URL</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see java.net.URL
-		 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.impl.ExmaraldaBasicPackageImpl#getURL()
-		 * @generated
-		 */
-		EDataType URL = eINSTANCE.getURL();
 
 	}
 

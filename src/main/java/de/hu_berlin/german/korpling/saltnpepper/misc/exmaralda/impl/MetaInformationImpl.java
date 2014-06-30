@@ -106,7 +106,7 @@ public class MetaInformationImpl extends EObjectImpl implements MetaInformation 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final URL REFERENCED_FILE_EDEFAULT = null;
+	protected static final String REFERENCED_FILE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getReferencedFile() <em>Referenced File</em>}' attribute.
@@ -116,7 +116,7 @@ public class MetaInformationImpl extends EObjectImpl implements MetaInformation 
 	 * @generated
 	 * @ordered
 	 */
-	protected URL referencedFile = REFERENCED_FILE_EDEFAULT;
+	protected String referencedFile = REFERENCED_FILE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getComment() <em>Comment</em>}' attribute.
@@ -234,7 +234,7 @@ public class MetaInformationImpl extends EObjectImpl implements MetaInformation 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public URL getReferencedFile() {
+	public String getReferencedFile() {
 		return referencedFile;
 	}
 
@@ -243,8 +243,8 @@ public class MetaInformationImpl extends EObjectImpl implements MetaInformation 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setReferencedFile(URL newReferencedFile) {
-		URL oldReferencedFile = referencedFile;
+	public void setReferencedFile(String newReferencedFile) {
+		String oldReferencedFile = referencedFile;
 		referencedFile = newReferencedFile;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.META_INFORMATION__REFERENCED_FILE, oldReferencedFile, referencedFile));
@@ -358,7 +358,7 @@ public class MetaInformationImpl extends EObjectImpl implements MetaInformation 
 				setTranscriptionName((String)newValue);
 				return;
 			case ExmaraldaBasicPackage.META_INFORMATION__REFERENCED_FILE:
-				setReferencedFile((URL)newValue);
+				setReferencedFile((String)newValue);
 				return;
 			case ExmaraldaBasicPackage.META_INFORMATION__COMMENT:
 				setComment((String)newValue);

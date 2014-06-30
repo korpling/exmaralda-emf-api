@@ -184,12 +184,12 @@ public interface Event extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Url</em>' attribute.
-	 * @see #setUrl(URL)
+	 * @see #setUrl(String)
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getEvent_Url()
-	 * @model dataType="de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.URL"
+	 * @model
 	 * @generated
 	 */
-	URL getUrl();
+	String getUrl();
 
 	/**
 	 * Sets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.Event#getUrl <em>Url</em>}' attribute.
@@ -199,7 +199,7 @@ public interface Event extends EObject {
 	 * @see #getUrl()
 	 * @generated
 	 */
-	void setUrl(URL value);
+	void setUrl(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' attribute.

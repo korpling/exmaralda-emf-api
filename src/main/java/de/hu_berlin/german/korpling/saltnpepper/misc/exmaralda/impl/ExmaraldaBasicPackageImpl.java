@@ -129,13 +129,6 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 	private EEnum evenT_MEDIUMEEnum = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EDataType urlEDataType = null;
-
-	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -669,15 +662,6 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EDataType getURL() {
-		return urlEDataType;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public ExmaraldaBasicFactory getExmaraldaBasicFactory() {
 		return (ExmaraldaBasicFactory)getEFactoryInstance();
 	}
@@ -762,9 +746,6 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		tieR_TYPEEEnum = createEEnum(TIER_TYPE);
 		timE_TYPEEEnum = createEEnum(TIME_TYPE);
 		evenT_MEDIUMEEnum = createEEnum(EVENT_MEDIUM);
-
-		// Create data types
-		urlEDataType = createEDataType(URL);
 	}
 
 	/**
@@ -806,7 +787,7 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		initEClass(metaInformationEClass, MetaInformation.class, "MetaInformation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getMetaInformation_ProjectName(), ecorePackage.getEString(), "projectName", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMetaInformation_TranscriptionName(), ecorePackage.getEString(), "transcriptionName", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getMetaInformation_ReferencedFile(), this.getURL(), "referencedFile", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getMetaInformation_ReferencedFile(), ecorePackage.getEString(), "referencedFile", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMetaInformation_Comment(), ecorePackage.getEString(), "comment", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getMetaInformation_UdMetaInformations(), this.getUDInformation(), null, "udMetaInformations", null, 0, -1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMetaInformation_TranscriptionConvention(), ecorePackage.getEString(), "transcriptionConvention", null, 0, 1, MetaInformation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -842,7 +823,7 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		initEReference(getEvent_Start(), this.getTLI(), this.getTLI_StartingEvents(), "start", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEvent_End(), this.getTLI(), this.getTLI_EndingEvents(), "end", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Medium(), this.getEVENT_MEDIUM(), "medium", "", 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getEvent_Url(), this.getURL(), "url", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getEvent_Url(), ecorePackage.getEString(), "url", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEvent_Value(), ecorePackage.getEString(), "value", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getEvent_Tier(), this.getTier(), this.getTier_Events(), "tier", null, 0, 1, Event.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -879,9 +860,6 @@ public class ExmaraldaBasicPackageImpl extends EPackageImpl implements Exmaralda
 		addEEnumLiteral(evenT_MEDIUMEEnum, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.EVENT_MEDIUM.IMG);
 		addEEnumLiteral(evenT_MEDIUMEEnum, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.EVENT_MEDIUM.TXT);
 		addEEnumLiteral(evenT_MEDIUMEEnum, de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.EVENT_MEDIUM.OTH);
-
-		// Initialize data types
-		initEDataType(urlEDataType, java.net.URL.class, "URL", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

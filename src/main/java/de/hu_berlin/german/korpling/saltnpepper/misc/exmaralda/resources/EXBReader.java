@@ -209,13 +209,8 @@ public class EXBReader extends DefaultHandler2 implements ExmaraldaXML
 			if (	(attValue!= null)&&
 					(!attValue.isEmpty()))
 			{
-				
-				try {
 					File refFile= new File(this.getExmaraldaFile().getParentFile()+"/"+attValue);
-					this.getBasicTranscription().getMetaInformation().setReferencedFile(refFile.toURI().toURL());
-				} catch (MalformedURLException e) {
-					throw new SAXException("Error in file, expected was an uri conform String, given is: "+attValue+".", e);
-				}
+					this.getBasicTranscription().getMetaInformation().setReferencedFile(refFile.toString());
 			}
 		}
 		//comment
@@ -351,13 +346,16 @@ public class EXBReader extends DefaultHandler2 implements ExmaraldaXML
 			{//if no medium is given, set it to null	
 				event.setMedium(null);
 			}
-			try {
-				if (attributes.getValue(ATT_URL)!= null)
-					event.setUrl(new URL(attributes.getValue(ATT_URL)));
-			} catch (MalformedURLException e) {
-				throw new SAXException("Cannot set the url, because it is not a valid url: "+attributes.getValue("url")+".", e);
+			String url= attributes.getValue(ATT_URL); 
+			if (	(url!= null)&&
+					(!url.isEmpty())){
+				try {
+					new URL(url);
+					event.setUrl(url);
+				} catch (MalformedURLException e) {
+					throw new SAXException("Cannot set the url, because it is not a valid url: "+attributes.getValue("url")+".", e);
+				}
 			}
-			
 			if (this.currTier== null)
 				throw new SAXException("File is not valid, there is an event not in a tier.");
 			this.currTier.getEvents().add(event);

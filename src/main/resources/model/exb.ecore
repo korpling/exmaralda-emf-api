@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="exmaralda"
-    nsURI="exb" nsPrefix="exb">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="exmaralda" nsURI="exb" nsPrefix="exb">
   <eClassifiers xsi:type="ecore:EClass" name="BasicTranscription">
     <eStructuralFeatures xsi:type="ecore:EReference" name="commonTimeLine" eType="#//CommonTimeLine"
         containment="true"/>
@@ -16,14 +14,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="MetaInformation">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="projectName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="transcriptionName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referencedFile" eType="#//URL"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referencedFile" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="udMetaInformations" upperBound="-1"
         eType="#//UDInformation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="transcriptionConvention"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="URL" instanceClassName="java.net.URL"/>
   <eClassifiers xsi:type="ecore:EClass" name="CommonTimeLine">
     <eStructuralFeatures xsi:type="ecore:EReference" name="TLIs" upperBound="-1" eType="#//TLI"
         containment="true"/>
@@ -76,7 +73,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="end" eType="#//TLI" eOpposite="#//TLI/endingEvents"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="medium" eType="#//EVENT_MEDIUM"
         defaultValueLiteral="" unsettable="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="#//URL"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="tier" eType="#//Tier" eOpposite="#//Tier/events"/>
   </eClassifiers>

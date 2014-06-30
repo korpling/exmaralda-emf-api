@@ -106,12 +106,12 @@ public interface MetaInformation extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Referenced File</em>' attribute.
-	 * @see #setReferencedFile(URL)
+	 * @see #setReferencedFile(String)
 	 * @see de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.ExmaraldaBasicPackage#getMetaInformation_ReferencedFile()
-	 * @model dataType="de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.URL"
+	 * @model
 	 * @generated
 	 */
-	URL getReferencedFile();
+	String getReferencedFile();
 
 	/**
 	 * Sets the value of the '{@link de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.MetaInformation#getReferencedFile <em>Referenced File</em>}' attribute.
@@ -121,7 +121,7 @@ public interface MetaInformation extends EObject {
 	 * @see #getReferencedFile()
 	 * @generated
 	 */
-	void setReferencedFile(URL value);
+	void setReferencedFile(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Comment</b></em>' attribute.

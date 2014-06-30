@@ -103,8 +103,6 @@ public class ExmaraldaBasicFactoryImpl extends EFactoryImpl implements Exmaralda
 				return createTIME_TYPEFromString(eDataType, initialValue);
 			case ExmaraldaBasicPackage.EVENT_MEDIUM:
 				return createEVENT_MEDIUMFromString(eDataType, initialValue);
-			case ExmaraldaBasicPackage.URL:
-				return createURLFromString(eDataType, initialValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -126,8 +124,6 @@ public class ExmaraldaBasicFactoryImpl extends EFactoryImpl implements Exmaralda
 				return convertTIME_TYPEToString(eDataType, instanceValue);
 			case ExmaraldaBasicPackage.EVENT_MEDIUM:
 				return convertEVENT_MEDIUMToString(eDataType, instanceValue);
-			case ExmaraldaBasicPackage.URL:
-				return convertURLToString(eDataType, instanceValue);
 			default:
 				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
@@ -291,24 +287,6 @@ public class ExmaraldaBasicFactoryImpl extends EFactoryImpl implements Exmaralda
 	 */
 	public String convertEVENT_MEDIUMToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public URL createURLFromString(EDataType eDataType, String initialValue) {
-		return (URL)super.createFromString(eDataType, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertURLToString(EDataType eDataType, Object instanceValue) {
-		return super.convertToString(eDataType, instanceValue);
 	}
 
 	/**

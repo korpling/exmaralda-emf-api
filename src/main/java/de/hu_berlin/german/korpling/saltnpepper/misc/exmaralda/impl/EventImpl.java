@@ -129,7 +129,7 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final URL URL_EDEFAULT = null;
+	protected static final String URL_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
@@ -139,7 +139,7 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * @generated
 	 * @ordered
 	 */
-	protected URL url = URL_EDEFAULT;
+	protected String url = URL_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -363,7 +363,7 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public URL getUrl() {
+	public String getUrl() {
 		return url;
 	}
 
@@ -372,8 +372,8 @@ public class EventImpl extends EObjectImpl implements Event {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUrl(URL newUrl) {
-		URL oldUrl = url;
+	public void setUrl(String newUrl) {
+		String oldUrl = url;
 		url = newUrl;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, ExmaraldaBasicPackage.EVENT__URL, oldUrl, url));
@@ -550,7 +550,7 @@ public class EventImpl extends EObjectImpl implements Event {
 				setMedium((EVENT_MEDIUM)newValue);
 				return;
 			case ExmaraldaBasicPackage.EVENT__URL:
-				setUrl((URL)newValue);
+				setUrl((String)newValue);
 				return;
 			case ExmaraldaBasicPackage.EVENT__VALUE:
 				setValue((String)newValue);
