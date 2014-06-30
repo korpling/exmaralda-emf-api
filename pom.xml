@@ -169,17 +169,24 @@
         </configuration>
       </plugin>
        <!-- start: Plugin for automatic releasing -->
-       <plugin>
+      <plugin>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.2.1</version>
+        <version>2.1</version>
         <executions>
-			<execution>
-				<id>default</id>
-				<goals>
-				<goal>perform</goal>
-				</goals>
-			</execution>
-		</executions>
+        	<execution>
+        		<id>default</id>
+        		<goals>
+        			<goal>perform</goal>        			
+        		</goals>
+        		<configuration>
+        			<pomFileName>exmaralda-emf-api/pom.xml</pomFileName>
+        		</configuration>
+        	</execution>
+        </executions>
+        <configuration>
+          <releaseProfiles>release</releaseProfiles>
+          <goals>package assembly:single deploy</goals>
+        </configuration>
       </plugin>
       <!-- start: creation of bundle jar -->
     </plugins>
