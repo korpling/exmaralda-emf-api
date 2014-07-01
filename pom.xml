@@ -11,6 +11,10 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
+  <issueManagement>
+        <system>GitHub</system>
+		<url>https://github.com/korpling/exmaralda-emf-api/issues</url>
+    </issueManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <component.descriptor.name>serviceComponents.xml</component.descriptor.name>
