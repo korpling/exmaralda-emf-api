@@ -22,7 +22,7 @@
     <assemblies.name>src/assemble/assemblies.xml</assemblies.name>
     <license.file>${basedir}/LICENSE</license.file>
     <notice.file>${basedir}/NOTICE</notice.file>
-    <emf.version>2.10.0-v20140514-1158</emf.version>
+    <emf.version>2.9.1-v20130827-0309</emf.version>
   </properties>
   <scm>
   	<connection>scm:git:git://github.com/github.com:korpling/exmaralda-emf-api.git</connection>
