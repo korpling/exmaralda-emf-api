@@ -34,6 +34,8 @@
 		<maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
 		<exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
 		<maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
+		<maven-source-plugin.version>2.4</maven-source-plugin.version>
+		<maven-javadoc-plugin.version>2.10.1</maven-javadoc-plugin.version>
 	</properties>
 	<scm>
 		<connection>scm:git:git://github.com/github.com:korpling/exmaralda-emf-api.git</connection>
