@@ -112,11 +112,11 @@ public class EXBWriter
 							}
 						}
 						{//comment
-							fileWriter.print("<comment");
+							fileWriter.print("<comment>");
 							if (	((basicTranscription.getMetaInformation()!= null)) &&
-									(basicTranscription.getMetaInformation().getComment()!= null))
-								fileWriter.print(basicTranscription.getMetaInformation().getComment());
-							else fileWriter.print(">");
+									(basicTranscription.getMetaInformation().getComment()!= null)) {
+                  fileWriter.print(basicTranscription.getMetaInformation().getComment());
+              }
 							fileWriter.print("</comment>");
 						}
 						{//transcription-convention

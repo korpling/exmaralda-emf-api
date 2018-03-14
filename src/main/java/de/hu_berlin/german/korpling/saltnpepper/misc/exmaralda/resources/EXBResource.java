@@ -40,7 +40,7 @@ import de.hu_berlin.german.korpling.saltnpepper.misc.exmaralda.exceptions.Exmara
 public class EXBResource extends ResourceImpl
 {	
 	/**
-	 * Stores a a treetagger-model into tab-seperated file.
+	 * Stores a a EXB model.
 	 */
 	public void save(java.util.Map<?,?> options) throws java.io.IOException
 	{
