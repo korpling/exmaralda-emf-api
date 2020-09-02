@@ -7,18 +7,30 @@
 <speaker id="SPK0">
 <abbreviation>SPK0</abbreviation>
 <sex value="u"></sex>
-<languages-used></languages-used>
-<l1></l1>
-<l2></l2>
+<languages-used>
+<language lang="eng"></language>
+</languages-used>
+<l1>
+<language lang="deu"></language>
+</l1>
+<l2>
+<language lang="fra"></language>
+</l2>
 <ud-speaker-information></ud-speaker-information>
 <comment></comment>
 </speaker>
 <speaker id="SPK1">
 <abbreviation>SPK1</abbreviation>
 <sex value="u"></sex>
-<languages-used></languages-used>
-<l1></l1>
-<l2></l2>
+<languages-used>
+<language lang="eng"></language>
+</languages-used>
+<l1>
+<language lang="deu"></language>
+</l1>
+<l2>
+<language lang="fra"></language>
+</l2>
 <ud-speaker-information></ud-speaker-information>
 <comment></comment>
 </speaker>

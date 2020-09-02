@@ -6,6 +6,11 @@
 *													                              *
 ***********************************************************************************
 
+Version 1.2.2
+=============
+
+* Fix generation of language tags: use "lang" attribute
+
 Version 1.1.4
 =============
 	*= enabled exmaralda-api to run under Eclipse juno even with SCR plugin in maven (carrot-garden)
