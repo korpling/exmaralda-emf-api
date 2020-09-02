@@ -160,7 +160,7 @@ public class EXBWriter {
 									for (String lang : speaker.getL1()) {
 										fileWriter.print("<language lang=\"");
 										fileWriter.print(lang);
-										fileWriter.println("</language>");
+										fileWriter.println("\"></language>");;
 									}
 									fileWriter.println("</l1>");
 								}
@@ -169,7 +169,7 @@ public class EXBWriter {
 									for (String lang : speaker.getL2()) {
 										fileWriter.print("<language lang=\"");
 										fileWriter.print(lang);
-										fileWriter.println("</language>");
+										fileWriter.println("\"></language>");
 									}
 									fileWriter.println("</l2>");
 								}
